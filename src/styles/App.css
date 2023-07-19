@@ -5,7 +5,17 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-/* header */
+/* fonts */
 .logo-font {
     font-family: 'Black Ops One', cursive;
+}
+
+.desc-font {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+/* shadow */
+
+.shadowing {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.746);
 }
