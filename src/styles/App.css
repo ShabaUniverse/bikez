@@ -8,13 +8,26 @@ body {
     background-color: #f1f5f9;
 }
 
+/* back grounds  */
+
+.black-lined-bg {
+    background: linear-gradient(90deg,transparent 50%,#2c2c2c 50%);
+        background-size: 3em 3em;
+        background-color: #262323;
+        opacity: 1
+}
+
 /* fonts */
 .logo-font {
     font-family: 'Black Ops One', cursive;
 }
 
 .desc-font {
-    font-family: 'Genos', sans-serif;
+    font-family: 'Zen Dots', cursive;
+}
+
+.louis-font{
+    font-family: 'Aboreto', cursive;
 }
 
 /* shadow */
