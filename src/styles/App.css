@@ -4,6 +4,9 @@
     padding: 0;
     font-family: 'Quicksand', sans-serif;
 }
+body {
+    background-color: #f1f5f9;
+}
 
 /* fonts */
 .logo-font {
@@ -11,7 +14,7 @@
 }
 
 .desc-font {
-    font-family: 'Darker Grotesque', sans-serif;
+    font-family: 'Genos', sans-serif;
 }
 
 /* shadow */
