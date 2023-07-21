@@ -1,10 +1,11 @@
 import React from "react";
+import Categories from "../components/Shop/Categories";
 
 const Shop = () => {
   return (
     <div className="shop">
-      <div className="shop-container w-4/5 mx-auto">
-        <div className="shop-wrapper">shop</div>
+      <div className="shop-wrapper">
+        <Categories />
       </div>
     </div>
   );
