@@ -10,7 +10,7 @@ const Header = () => {
           <div className="left">
             <div className="logo">
               <Link to='/' className="flex">
-                <p className="logo-font text-4xl font-medium text-teal-400">
+                <p className="logo-font text-4xl font-medium text-yellow-400">
                   BIKE
                 </p>
                 <span className="logo-font text-4xl font-medium text-stone-600">
@@ -21,29 +21,29 @@ const Header = () => {
           </div>
           <div className="right flex">
             <div className="links">
-              <Link to="/" className="font-medium ml-3 hover:text-teal-400">
-                blog
+              <Link to="/" className="font-semibold ml-3 hover:text-yellow-400">
+                Blog
               </Link>
-              <Link to="/shop" className="font-medium ml-3 hover:text-teal-400">
-                shop
+              <Link to="/shop" className="font-semibold ml-3 hover:text-yellow-400">
+                Shop
               </Link>
               <Link
                 to="/contact"
-                className="font-medium ml-3 hover:text-teal-400"
+                className="font-semibold ml-3 hover:text-yellow-400"
               >
-                about
+                About
               </Link>
               <Link
                 to="/about"
-                className="font-medium ml-3 hover:text-teal-400"
+                className="font-semibold ml-3 hover:text-yellow-400"
               >
-                contact
+                Contact
               </Link>
             </div>
 
             <div className="cart ml-4 flex">
               <svg
-                className="fill-teal-400 cursor-pointer hover:fill-teal-500"
+                className="fill-yellow-400 cursor-pointer hover:fill-yellow-500"
                 viewBox="0 0 448 512"
                 width="25px"
                 height="25px"
