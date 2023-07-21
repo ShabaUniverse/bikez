@@ -3,35 +3,39 @@
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
+    color: #57534e;
 }
 body {
     background-color: #f1f5f9;
 }
 
-/* back grounds  */
 
+/* back grounds  */
 .black-lined-bg {
     background: linear-gradient(90deg,transparent 50%,#2c2c2c 50%);
         background-size: 3em 3em;
         background-color: #262323;
         opacity: 1
 }
-
 /* fonts */
+
 .logo-font {
     font-family: 'Black Ops One', cursive;
 }
 
 .desc-font {
-    font-family: 'Zen Dots', cursive;
-}
-
-.louis-font{
-    font-family: 'Aboreto', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* shadow */
 
 .shadowing {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.746);
+}
+
+/* gradient */
+
+.gradient-yellow-grey {
+    background: rgb(2,0,36);
+    background: linear-gradient(41deg, rgba(2,0,36,1) 0%, rgba(255,223,59,1) 0%, rgba(241,245,249,1) 58%);
 }
