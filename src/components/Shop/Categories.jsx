@@ -27,6 +27,7 @@ const Categories = () => {
               {category.name}
             </p>
           ))}
+          <p>zasdasd</p>
         </div>
       </div>
     </div>
