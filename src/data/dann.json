@@ -1,0 +1,23 @@
+[
+  {
+    "id": "0",
+    "imageUrl": "https://i.imgur.com/NRSd11b.jpg",
+    "title": "Trek Slash",
+    "type": "Mountain",
+    "desc": "Kinda dope bike innit",
+    "sizes": [26, 30, 40],
+    "price": 1200,
+    "rating": 4
+  },
+  {
+    "id": "1",
+    "imageUrl": "https://i.imgur.com/3isB5qW.jpg",
+    "title": "Trek Emond",
+    "type": "Road",
+    "desc": "Kinda dope bike innit",
+    "sizes": ["S", "M", "L"],
+    "price": 1270,
+    "rating": 4
+  }
+]
+
