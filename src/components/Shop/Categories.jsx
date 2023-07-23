@@ -1,7 +1,14 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import categorySlice,  {categorySelector}  from "../../data/slices/categorySlice";
+import { setActiveCategory } from "../../data/slices/categorySlice";
 
 const Categories = () => {
-  const [activeCategory, setActiveCategory] = useState(0);
+  
+  const { activeCategory } = useSelector(categorySelector);
+  const dispatch = useDispatch();
+
+  
   let categories = [
     { name: "Mountain", id: 1 },
     { name: "Road", id: 2 },
@@ -10,6 +17,7 @@ const Categories = () => {
     { name: "E-Bikes", id: 5 },
     { name: "BMX", id: 6 },
   ];
+
   return (
     <div className="categories pt-20 pb-10 bg-yellow-400">
       <div className="categories-container w-4/5 m-auto">
@@ -22,7 +30,7 @@ const Categories = () => {
                   : "font-semibold cursor-pointer"
               }
               key={category.id}
-              onClick={() => setActiveCategory(category.id)}>
+              onClick={() => dispatch(setActiveCategory(category.id))}>
               {category.name}
             </p>
           ))}

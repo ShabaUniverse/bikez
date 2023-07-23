@@ -1,40 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
+import { productSelector } from "../../data/slices/productSlice";
+import { useSelector } from "react-redux";
 
-const ProductBox = ({ data }) => {
+const ProductBox = ({ id, title, price, sizes, imageUrl }) => {
+  const { products } = useSelector(productSelector);
+
+  const [activeSize, setActiveSize] = useState(0);
+
   return (
     <div className="products-wrapper flex justify-center items-center">
-      {data.map((item) => (
-        <div className="product-box w-72 h-80 mx-5 bg-white">
-          <div className="top flex justify-between items-center mx-3 mt-3">
-            <div className="title font-semibold text-yellow-400">
-              {item.title}
-            </div>
-            <div className="plus-button font-semibold bg-yellow-400 w-8 h-8 flex justify-center items-center rounded-lg text-lg cursor-pointer">
-              +
-            </div>
-          </div>
-
-          <div className="product-image flex justify-center items-center">
-            <img src={item.imageUrl} alt="" width="265px" />
-          </div>
-
-          <div className="product-size">
-            <div className="size-wrapper flex justify-center items-center bg-yellow-400 py-2">
-              {item.sizes.map((size, i) => (
-                <p
-                  className="font-semibold bg-white w-9 flex justify-center mx-1"
-                  key={i}>
-                  {size}
-                </p>
-              ))}
-            </div>
-          </div>
-
-          <div className="product-price flex justify-end items-center mt-2 mr-3">
-            <p className="font-bold">$ {item.price}</p>
+      <div className="product-box w-72 h-80 mx-5 bg-white">
+        <div className="top flex justify-between items-center mx-3 mt-3">
+          <div className="title font-semibold text-yellow-400">{title}</div>
+          <div className="plus-button  font-semibold bg-transparent w-8 h-8 flex justify-center border border-yellow-400 items-center rounded-lg text-lg cursor-pointer text-stone-600 hover:bg-yellow-400 hover:text-white">
+            +
           </div>
         </div>
-      ))}
+
+        <div className="product-image flex justify-center items-center">
+          <img src={imageUrl} alt="" width="265px" />
+        </div>
+
+        <div className="product-size">
+          <div className="size-wrapper flex justify-center items-center bg-yellow-400 py-2">
+            {sizes.map((size, i) => (
+              <p
+                className={
+                  activeSize === i
+                    ? "font-semibold bg-stone-600 w-9 flex justify-center items-center mx-1 text-white"
+                    : "font-semibold bg-white w-9 flex justify-center mx-1 cursor-pointer"
+                }
+                key={i}
+                onClick={() => setActiveSize(i)}>
+                {size}
+              </p>
+            ))}
+          </div>
+        </div>
+
+        <div className="product-price flex justify-end items-center mt-2 mr-3">
+          <p className="font-bold">$ {price}</p>
+        </div>
+      </div>
     </div>
   );
 };
