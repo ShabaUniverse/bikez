@@ -12,7 +12,7 @@ const ProductBox = ({ id, title, price, sizes, imageUrl }) => {
       <div className="product-box w-72 h-80 mx-5 bg-white">
         <div className="top flex justify-between items-center mx-3 mt-3">
           <div className="title font-semibold text-yellow-400">{title}</div>
-          <div className="plus-button  font-semibold bg-transparent w-8 h-8 flex justify-center border border-yellow-400 items-center rounded-lg text-lg cursor-pointer text-stone-600 hover:bg-yellow-400 hover:text-white">
+          <div className="plus-button  font-lg bg-transparent w-8 h-8 flex justify-center border border-yellow-400 items-center rounded-lg text-lg cursor-pointer text-stone-600 hover:bg-yellow-400 hover:text-white">
             +
           </div>
         </div>
@@ -27,8 +27,8 @@ const ProductBox = ({ id, title, price, sizes, imageUrl }) => {
               <p
                 className={
                   activeSize === i
-                    ? "font-semibold bg-stone-600 w-9 flex justify-center items-center mx-1 text-white"
-                    : "font-semibold bg-white w-9 flex justify-center mx-1 cursor-pointer"
+                    ? "font-lg bg-stone-600 w-9 flex justify-center items-center mx-1 text-white"
+                    : "font-lg bg-white w-9 flex justify-center mx-1 cursor-pointer"
                 }
                 key={i}
                 onClick={() => setActiveSize(i)}>
@@ -39,7 +39,7 @@ const ProductBox = ({ id, title, price, sizes, imageUrl }) => {
         </div>
 
         <div className="product-price flex justify-end items-center mt-2 mr-3">
-          <p className="font-bold">$ {price}</p>
+          <p className="font-lg">$ {price}</p>
         </div>
       </div>
     </div>
