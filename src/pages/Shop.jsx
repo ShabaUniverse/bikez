@@ -2,15 +2,19 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Categories from "../components/Shop/Categories";
 import Products from "../components/Shop/Products";
+import { useDispatch, useSelector } from 'react-redux';
+import { productSelector } from "../data/slices/productSlice";
+import { setProducts } from "../data/slices/productSlice";
 
 const Shop = () => {
-  const [data, setData] = useState(null);
+  const  { products } = useSelector(productSelector);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     axios
       .get("https://63d7d820afbba6b7c945b3e7.mockapi.io/bikes")
       .then((res) => {
-        setData(res.data);
+        dispatch(setProducts(res.data));
         console.log(res.data)
       })    
   }, []);
@@ -19,7 +23,7 @@ const Shop = () => {
     <div className="shop">
       <div className="shop-wrapper">
         <Categories />
-        {data && <Products data={data}/>}
+        {products && <Products/>}
       </div>
     </div>
   );
