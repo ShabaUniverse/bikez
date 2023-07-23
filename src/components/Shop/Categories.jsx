@@ -22,12 +22,10 @@ const Categories = () => {
                   : "font-semibold cursor-pointer"
               }
               key={category.id}
-              onClick={() => setActiveCategory(category.id)}
-            >
+              onClick={() => setActiveCategory(category.id)}>
               {category.name}
             </p>
           ))}
-          <p>zasdasd</p>
         </div>
       </div>
     </div>
