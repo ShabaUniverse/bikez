@@ -4,7 +4,9 @@ const About = () => {
   return (
     <div className="about">
       <div className="about-container w-4/5 mx-auto">
-        <div className="about-wrapper">about</div>
+        <div className="about-wrapper">
+          
+        </div>
       </div>
     </div>
   );
