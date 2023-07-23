@@ -10,7 +10,7 @@ const productSlice = createSlice({
         setProducts(state, action){
             state.products = action.payload;
         },
-    } 
+    }
 });
 
 export const productSelector = (state) => state.product;
