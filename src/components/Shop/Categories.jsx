@@ -5,18 +5,9 @@ import { setActiveCategory } from "../../data/slices/categorySlice";
 
 const Categories = () => {
   
-  const { activeCategory } = useSelector(categorySelector);
+  const { activeCategory, categories } = useSelector(categorySelector);
   const dispatch = useDispatch();
 
-  
-  let categories = [
-    { name: "Mountain", id: 1 },
-    { name: "Road", id: 2 },
-    { name: "Cross", id: 3 },
-    { name: "Gravel", id: 4 },
-    { name: "E-Bikes", id: 5 },
-    { name: "BMX", id: 6 },
-  ];
 
   return (
     <div className="categories pt-20 pb-10 bg-yellow-400">
