@@ -9,7 +9,7 @@ const Products = () => {
   return (
     <div className="products">
       <div className="products-container w-4/5 mx-auto">
-        <div className="products-wrapper mt-4 flex flex-row justify-center items-center">
+        <div className="products-wrapper mt-4 grid grid-cols-3 gap-y-14">
           {products.map((item) => (
             <ProductBox {...item} key={item.id} />
           ))}
