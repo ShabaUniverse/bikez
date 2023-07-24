@@ -39,7 +39,7 @@ const ProductBox = ({ id, title, price, sizes, imageUrl }) => {
         </div>
 
         <div className="product-price flex justify-end items-center mt-2 mr-3">
-          <p className="font-lg">$ {price}</p>
+          <p className="font-semibold">$ {price}</p>
         </div>
       </div>
     </div>
