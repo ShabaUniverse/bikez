@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import { productSelector } from "../../data/slices/productSlice";
-import { useSelector } from "react-redux";
 
-const ProductBox = ({ id, title, price, sizes, imageUrl }) => {
-  const { products } = useSelector(productSelector);
+const ProductBox = ({ title, price, sizes, imageUrl }) => {
 
   const [activeSize, setActiveSize] = useState(0);
+
 
   return (
     <div className="products-wrapper flex justify-center items-center">

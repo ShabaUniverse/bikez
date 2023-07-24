@@ -15,7 +15,6 @@ const Shop = () => {
       .get("https://63d7d820afbba6b7c945b3e7.mockapi.io/bikes")
       .then((res) => {
         dispatch(setProducts(res.data));
-        console.log(res.data)
       })    
   }, []);
 
