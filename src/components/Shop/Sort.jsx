@@ -17,7 +17,7 @@ const Sort = () => {
         <div className="sort-wrapper flex font-semibold">
           <p className="mr-2">Sort by</p>
           <select
-            className="font-semibold px-3"
+            className="font-semibold px-3 border-none outline-none bg bg-slate-100"
             value={sortValue}
             onChange={(e) => sortChange(e)}>
             <option value="default" className="font-semibold">
