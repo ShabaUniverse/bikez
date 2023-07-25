@@ -14,22 +14,30 @@ const Sort = () => {
   return (
     <div className="sort mt-3">
       <div className="sort-container w-4/5 mx-auto">
-        <div className="sort-wrapper flex font-semibold">
-          <p className="mr-2">Sort by</p>
+        <div className="sort-wrapper flex font-medium justify-end items-center">
+          <p className="mr-2">Sort by:</p>
           <select
-            className="font-semibold px-3 border-none outline-none bg bg-slate-100"
+            className="px-1 font-medium text-left outline-none bg bg-slate-100"
             value={sortValue}
             onChange={(e) => sortChange(e)}>
-            <option value="default" className="font-semibold">
+            <option
+              value="default"
+              className="font-medium bg-stone-600 text-white checked:text-yellow-400">
               default
             </option>
-            <option value="rating" className="font-semibold">
+            <option
+              value="rating"
+              className="font-medium bg-stone-600 text-white checked:text-yellow-400">
               rating
             </option>
-            <option value="name" className="font-semibold">
+            <option
+              value="name"
+              className="font-medium bg-stone-600 text-white checked:text-yellow-400">
               name
             </option>
-            <option value="price" className="font-semibold">
+            <option
+              value="price"
+              className="font-medium bg-stone-600 text-white checked:text-yellow-400">
               price
             </option>
           </select>
