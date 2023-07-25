@@ -3,8 +3,7 @@ import React, { useState } from "react";
 const ProductBox = ({ title, price, sizes, imageUrl }) => {
 
   const [activeSize, setActiveSize] = useState(0);
-
-
+  
   return (
     <div className="products-wrapper flex justify-center items-center">
       <div className="product-box w-72 h-80 mx-5 bg-white">
