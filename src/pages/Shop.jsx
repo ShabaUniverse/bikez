@@ -4,24 +4,22 @@ import Categories from "../components/Shop/Categories";
 import Products from "../components/Shop/Products";
 import { useDispatch, useSelector } from "react-redux";
 import { productSelector } from "../data/slices/productSlice";
-import { setProducts } from "../data/slices/productSlice";
 import categorySlice, { categorySelector } from "../data/slices/categorySlice";
 import Sort from "../components/Shop/Sort";
 import { sortSelector } from "../data/slices/sortSlice";
+import { fetchProducts } from "../data/slices/productSlice";
+import Loading from "../components/Loading";
+import FetchError from "../components/FetchError";
 
 const Shop = () => {
-  const { products } = useSelector(productSelector);
+  const { products, status } = useSelector(productSelector);
+
   const { activeCategory } = useSelector(categorySelector);
   const { sortValue } = useSelector(sortSelector);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    axios
-      .get("https://63d7d820afbba6b7c945b3e7.mockapi.io/bikes")
-      .then((res) => {
-        dispatch(setProducts(res.data));
-        console.log('re-rendered');
-      });
+    dispatch(fetchProducts());
   }, [activeCategory, sortValue]);
 
   return (
@@ -29,7 +27,9 @@ const Shop = () => {
       <div className="shop-wrapper">
         <Categories />
         <Sort />
-        {products && <Products />}
+        {status === 'loading' && <Loading />}
+        {status === 'succeeded' && <Products />}
+        {status === 'failed' && <FetchError/>}
       </div>
     </div>
   );
