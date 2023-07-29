@@ -38,7 +38,7 @@ const Shop = () => {
         {status === 'succeeded' && <Products filteredProducts={filteredProducts}/>}
         {status === 'failed' && <FetchError/>}
 
-        {status === 'succeeded' && <Pagination filteredProducts={filteredProducts}/>}
+        {status === 'succeeded' && activeCategory === 0 && <Pagination filteredProducts={filteredProducts}/>}
       </div>
     </div>
   );

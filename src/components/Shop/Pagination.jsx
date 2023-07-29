@@ -15,15 +15,15 @@ const Pagination = () => {
   let lastIndex = currentPage * productsPerPage;
   let firstIndex = lastIndex - productsPerPage;
   let quantityOfPages = Math.ceil(products.length / productsPerPage);
-  let justtoset = [];
+  let preSetCurrentProducts = [];
 
-  justtoset = products.slice(firstIndex, lastIndex);
+  preSetCurrentProducts = products.slice(firstIndex, lastIndex);
 
   useEffect(() => {
-    dispatch(setCurrentProducts(justtoset));
+    dispatch(setCurrentProducts(preSetCurrentProducts));
   }, [currentPage]);
 
-  useEffect(() => {
+  useEffect(() => {    //created this effect to log it once.
     console.log(currentProducts);
   }, [currentProducts])
 

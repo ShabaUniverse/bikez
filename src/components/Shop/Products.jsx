@@ -4,12 +4,15 @@ import { useSelector } from "react-redux";
 import { productSelector } from "../../data/slices/productSlice";
 import { categorySelector } from "../../data/slices/categorySlice";
 import { sortSelector } from "../../data/slices/sortSlice";
+import { paginationSelector } from "../../data/slices/paginationSlice";
 
 
 const Products = () => {
   const { products } = useSelector(productSelector);
   const { activeCategory, categories } = useSelector(categorySelector);
   const { sortValue } = useSelector(sortSelector);
+
+  const {currentProducts} = useSelector(paginationSelector);
 
   let filteredProducts =
     activeCategory > 0
@@ -18,7 +21,7 @@ const Products = () => {
             item.type.toLowerCase() ===
             categories[activeCategory].name.toLowerCase(),
         )
-      : [...products];
+      : [...currentProducts];
 
   if (sortValue === "rating") {
     filteredProducts.sort((a, b) => b.rating - a.rating);
