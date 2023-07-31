@@ -11,7 +11,7 @@ const Categories = () => {
 
   return (
     <div className="categories pt-20 px-5 bg-yellow-400 h-screen sticky top-0">
-      <div className="categories-list flex flex-col h-full">
+      <div className="categories-list flex flex-col justify-center h-full">
         {categories.map((category) => (
           <p
             className={
