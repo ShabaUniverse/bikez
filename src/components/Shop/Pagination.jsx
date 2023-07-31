@@ -6,10 +6,13 @@ import {
   setCurrentPage,
   setCurrentProducts,
 } from "../../data/slices/paginationSlice";
+import { sortSelector } from "../../data/slices/sortSlice";
 
 const Pagination = () => {
   const { products } = useSelector(productSelector);
-  const { currentPage, productsPerPage, currentProducts } = useSelector(paginationSelector);
+  const { sortValue } = useSelector(sortSelector);
+  const { currentPage, productsPerPage, currentProducts } =
+    useSelector(paginationSelector);
   const dispatch = useDispatch();
 
   let lastIndex = currentPage * productsPerPage;
@@ -17,15 +20,23 @@ const Pagination = () => {
   let quantityOfPages = Math.ceil(products.length / productsPerPage);
   let preSetCurrentProducts = [];
 
-  preSetCurrentProducts = products.slice(firstIndex, lastIndex);
 
   useEffect(() => {
+    let sorted;
+    if (sortValue === "price") {
+      sorted = [...products].sort((a, b) => b.price - a.price);
+    } else if (sortValue === "rating") {
+      sorted = [...products].sort((a, b) => b.rating - a.rating);
+    } else if (sortValue === "name") {
+      sorted  = [...products].sort((a, b) =>
+        (a.title ?? "").localeCompare(b.title ?? ""),
+      );
+    } else {
+      sorted = products;
+    }
+    preSetCurrentProducts = sorted.slice(firstIndex, lastIndex);
     dispatch(setCurrentProducts(preSetCurrentProducts));
-  }, [currentPage]);
-
-  useEffect(() => {    //created this effect to log it once.
-    console.log(currentProducts);
-  }, [currentProducts])
+  }, [sortValue, currentPage]);
 
   let pages = [];
   for (let i = 1; i <= quantityOfPages; i++) {

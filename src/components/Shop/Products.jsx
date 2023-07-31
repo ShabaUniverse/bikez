@@ -23,13 +23,13 @@ const Products = () => {
         )
       : [...currentProducts];
 
-  if (sortValue === "rating") {
+  if (sortValue === "rating" && activeCategory > 0) {
     filteredProducts.sort((a, b) => b.rating - a.rating);
-  } else if (sortValue === "name") {
+  } else if (sortValue === "name" && activeCategory > 0) {
     filteredProducts.sort((a, b) =>
       (a.title ?? "").localeCompare(b.title ?? ""),
     );
-  } else if (sortValue === "price") {
+  } else if (sortValue === "price" && activeCategory > 0) {
     filteredProducts.sort((a, b) => b.price - a.price);
   }
 
