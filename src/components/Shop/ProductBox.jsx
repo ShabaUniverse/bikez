@@ -1,42 +1,52 @@
 import React, { useState } from "react";
 
 const ProductBox = ({ title, price, sizes, imageUrl }) => {
-
   const [activeSize, setActiveSize] = useState(0);
-  
+
   return (
-    <div className="products-wrapper flex justify-center items-center">
-      <div className="product-box w-72 h-80 mx-5 bg-white">
-        <div className="top flex justify-between items-center mx-3 mt-3">
-          <div className="title font-semibold text-yellow-400">{title}</div>
-          <div className="plus-button  font-lg bg-transparent w-8 h-8 flex justify-center border border-yellow-400 items-center rounded-lg text-lg cursor-pointer text-stone-600 hover:bg-yellow-400 hover:text-white">
-            +
+    <div className="products-itself border border-white mt-2 ml-1 hover:border-yellow-400">
+      <div className="product-box w-full h-64 pl-2 bg-white flex justify-between ">
+        <div className="one pl-3 flex justify-center items-center">
+          <img src={imageUrl} alt="" width="250px" />
+        </div>
+
+        <div className="two flex flex-col justify-between items-start py-4 w-64">
+          <div className="title">
+            <h2 className="text-lg font-semibold">{title}</h2>
+          </div>
+
+          <div className="desc">
+            <p>something about motherfucking bicyle some trash or some one more time innit</p>
+          </div>
+
+          <div className="size">
+            <div className="size-wrapper flex">
+              {sizes.map((size, i) => (
+                <p
+                  className={
+                    activeSize === i
+                      ? "font-lg bg-stone-600 w-9 flex justify-center items-center mx-1 text-white cursor-pointer"
+                      : "font-lg bg-white w-9 flex justify-center mx-1 cursor-pointer"
+                  }
+                  key={i}
+                  onClick={() => setActiveSize(i)}>
+                  {size}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
 
-        <div className="product-image flex justify-center items-center">
-          <img src={imageUrl} alt="" width="265px" />
-        </div>
-
-        <div className="product-size">
-          <div className="size-wrapper flex justify-center items-center bg-yellow-400 py-2">
-            {sizes.map((size, i) => (
-              <p
-                className={
-                  activeSize === i
-                    ? "font-lg bg-stone-600 w-9 flex justify-center items-center mx-1 text-white"
-                    : "font-lg bg-white w-9 flex justify-center mx-1 cursor-pointer"
-                }
-                key={i}
-                onClick={() => setActiveSize(i)}>
-                {size}
-              </p>
-            ))}
+        <div className="three py-4 px-3 flex flex-col justify-between items-end w-28">
+          <div className="price">
+            <p className="font-bold">$ {price}</p>
           </div>
-        </div>
 
-        <div className="product-price flex justify-end items-center mt-2 mr-3">
-          <p className="font-semibold">$ {price}</p>
+          <div className="add">
+            <p className=" w-8 h-8 bg-yellow-400 text-white flex justify-center items-center font-bold cursor-pointer hover:bg-yellow-500">
+              +
+            </p>
+          </div>
         </div>
       </div>
     </div>

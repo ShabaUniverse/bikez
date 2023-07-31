@@ -35,8 +35,8 @@ const Products = () => {
 
   return (
     <div className="products">
-      <div className="products-container w-4/5 mx-auto">
-        <div className="products-wrapper mt-4 grid grid-cols-3 gap-y-14">
+      <div className="products-container">
+        <div className="products-wrapper">
           {
             filteredProducts.map((item) => (
               <ProductBox {...item} key={item.id} />

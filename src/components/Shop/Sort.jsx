@@ -12,9 +12,9 @@ const Sort = () => {
   };
 
   return (
-    <div className="sort mt-3">
+    <div className="sort pt-14">
       <div className="sort-container w-4/5 mx-auto">
-        <div className="sort-wrapper flex font-medium justify-end items-center">
+        <div className="sort-wrapper flex font-medium justify-start items-center">
           <p className="mr-2">Sort by:</p>
           <select
             className="px-1 font-medium text-left outline-none bg bg-slate-100"

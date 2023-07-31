@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
+import "../styles/App.css";
 
 import Products from "../components/Shop/Products";
 import Categories from "../components/Shop/Categories";
@@ -17,7 +18,7 @@ import { paginationSelector } from "../data/slices/paginationSlice";
 import { setCurrentProducts } from "../data/slices/paginationSlice";
 
 const Shop = () => {
-  const {currentProducts} = useSelector(paginationSelector);
+  const { currentProducts } = useSelector(paginationSelector);
   const { products, status } = useSelector(productSelector);
   const { activeCategory } = useSelector(categorySelector);
   const { sortValue } = useSelector(sortSelector);
@@ -31,19 +32,28 @@ const Shop = () => {
 
   return (
     <div className="shop">
-      <div className="shop-wrapper">
-        <Categories />
-        <Sort />
-        {status === 'loading' && <Loading />}
-        {status === 'succeeded' && <Products filteredProducts={filteredProducts}/>}
-        {status === 'failed' && <FetchError/>}
+      <div className="shop-wrapper w-4/5 mx-auto">
+        <div className="shop-sides one-half-grid">
+          <div className="leftSide">
+            <Categories />
+          </div>
 
-        {status === 'succeeded' && activeCategory === 0 && <Pagination filteredProducts={filteredProducts}/>}
+          <div className="rightSide">
+            <Sort />
+            {status === "loading" && <Loading />}
+            {status === "succeeded" && (
+              <Products filteredProducts={filteredProducts} />
+            )}
+            {status === "failed" && <FetchError />}
+          </div>
+        </div>
+
+        {status === "succeeded" && activeCategory === 0 && (
+          <Pagination filteredProducts={filteredProducts} />
+        )}
       </div>
     </div>
   );
 };
 
 export default Shop;
-
-
