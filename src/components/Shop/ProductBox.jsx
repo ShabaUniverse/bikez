@@ -1,7 +1,25 @@
 import React, { useState } from "react";
+import { setBagProducts } from "../../data/slices/bagSlice";
+import { useDispatch } from "react-redux"; 
 
-const ProductBox = ({ title, desc, price, sizes, imageUrl }) => {
+const ProductBox = ({ title, desc, price, sizes, imageUrl, type, id }) => {
   const [activeSize, setActiveSize] = useState(0);
+  const dispatch = useDispatch();
+
+  
+  let wholeItem = {
+    id,
+    title,
+    desc,
+    price,
+    size: sizes[activeSize],
+    imageUrl,
+    type
+  }
+
+  const addToBag = () => {
+    dispatch(setBagProducts(wholeItem))
+  };
 
   return (
     <div className="products-itself border border-white mt-2 ml-1 hover:border-yellow-400">
@@ -43,7 +61,9 @@ const ProductBox = ({ title, desc, price, sizes, imageUrl }) => {
           </div>
 
           <div className="add">
-            <p className=" w-8 h-8 bg-yellow-400 text-white flex justify-center items-center font-bold cursor-pointer hover:bg-yellow-500">
+            <p
+              className=" w-8 h-8 bg-yellow-400 text-white flex justify-center items-center font-bold cursor-pointer hover:bg-yellow-500"
+              onClick={() => addToBag()}>
               +
             </p>
           </div>
