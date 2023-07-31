@@ -33,7 +33,7 @@ const Shop = () => {
   return (
     <div className="shop">
       <div className="shop-wrapper w-4/5 mx-auto">
-        <div className="shop-sides one-half-grid">
+        <div className="shop-sides shop-grid">
           <div className="leftSide">
             <Categories />
           </div>
