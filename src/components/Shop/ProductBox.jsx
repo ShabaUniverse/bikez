@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ProductBox = ({ title, price, sizes, imageUrl }) => {
+const ProductBox = ({ title, desc, price, sizes, imageUrl }) => {
   const [activeSize, setActiveSize] = useState(0);
 
   return (
@@ -16,7 +16,7 @@ const ProductBox = ({ title, price, sizes, imageUrl }) => {
           </div>
 
           <div className="desc">
-            <p>something about motherfucking bicyle some trash or some one more time innit</p>
+            <p>{desc}</p>
           </div>
 
           <div className="size">
