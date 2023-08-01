@@ -1,8 +1,11 @@
 import React from "react";
 import "../styles/App.css";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { bagSelector } from "../data/slices/bagSlice";
 
 const Header = () => {
+  const {bagProducts} = useSelector(bagSelector);
   return (
     <div className="header bg-slate-100 py-1 z-50 fixed w-full">
       <div className="header-container w-4/5 mx-auto">
@@ -52,7 +55,7 @@ const Header = () => {
                   <path d="M416 160h-72V120C344 53.83 290.2 0 224 0S104 53.83 104 120V160H32C14.33 160 0 174.3 0 192v240C0 476.2 35.82 512 80 512h288c44.18 0 80-35.82 80-80V192C448 174.3 433.7 160 416 160zM152 120C152 80.3 184.3 48 224 48s72 32.3 72 72V160h-144V120zM128 248C114.8 248 104 237.3 104 224S114.8 200 128 200S152 210.8 152 224S141.3 248 128 248zM320 248c-13.25 0-24-10.75-24-24S306.8 200 320 200S344 210.8 344 224S333.3 248 320 248z" />
                 </svg>
               </Link>
-              <p className="font-semibold text-xs">0</p>
+              <p className="font-semibold text-xs">{bagProducts.length}</p>
             </div>
           </div>
         </div>
