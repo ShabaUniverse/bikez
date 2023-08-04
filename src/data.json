@@ -1,0 +1,302 @@
+[
+  {
+    "id": "0",
+    "imageUrl": "https://i.imgur.com/F3B67z7.jpg",
+    "title": "Ghost Square",
+    "type": "Cross",
+    "desc": "A versatile bicycle designed to handle a mix of terrains. It combines elements of road and mountain bikes, featuring a lightweight frame, wider tires with tread for traction, and often comes with disc brakes for reliable stopping power. Cross bikes are perfect for adventurous riders who want to explore gravel paths, dirt trails, and even compete in cyclocross races. With a comfortable yet performance-oriented riding position, they offer a thrilling ride that's adaptable to various conditions.",
+    "sizes": ["S", "M", "L"],
+    "price": 980,
+    "rating": 1
+  },
+  {
+    "id": "1",
+    "imageUrl": "https://i.imgur.com/kFLqJM0.jpg",
+    "title": "Giant ToughRoad",
+    "type": "Cross",
+    "desc": "A versatile bicycle designed to handle a mix of terrains. It combines elements of road and mountain bikes, featuring a lightweight frame, wider tires with tread for traction, and often comes with disc brakes for reliable stopping power. Cross bikes are perfect for adventurous riders who want to explore gravel paths, dirt trails, and even compete in cyclocross races. With a comfortable yet performance-oriented riding position, they offer a thrilling ride that's adaptable to various conditions.",
+    "sizes": ["S", "M", "L"],
+    "price": 1080,
+    "rating": 5
+  },
+  {
+    "id": "2",
+    "imageUrl": "https://i.imgur.com/g8N1huF.jpg",
+    "title": "Giant Roam",
+    "type": "Cross",
+    "desc": "A versatile bicycle designed to handle a mix of terrains. It combines elements of road and mountain bikes, featuring a lightweight frame, wider tires with tread for traction, and often comes with disc brakes for reliable stopping power. Cross bikes are perfect for adventurous riders who want to explore gravel paths, dirt trails, and even compete in cyclocross races. With a comfortable yet performance-oriented riding position, they offer a thrilling ride that's adaptable to various conditions.",
+    "sizes": ["S", "M", "L"],
+    "price": 1150,
+    "rating": 5
+  },
+  {
+    "id": "3",
+    "imageUrl": "https://i.imgur.com/X7O752w.jpg",
+    "title": "Scott Subcross",
+    "type": "Cross",
+    "desc": "A versatile bicycle designed to handle a mix of terrains. It combines elements of road and mountain bikes, featuring a lightweight frame, wider tires with tread for traction, and often comes with disc brakes for reliable stopping power. Cross bikes are perfect for adventurous riders who want to explore gravel paths, dirt trails, and even compete in cyclocross races. With a comfortable yet performance-oriented riding position, they offer a thrilling ride that's adaptable to various conditions.",
+    "sizes": ["S", "M", "L"],
+    "price": 1350,
+    "rating": 3
+  },
+  {
+    "id": "4",
+    "imageUrl": "https://i.imgur.com/isnpNEw.jpg",
+    "title": "Trek DualSport 2",
+    "type": "Cross",
+    "desc": "A versatile bicycle designed to handle a mix of terrains. It combines elements of road and mountain bikes, featuring a lightweight frame, wider tires with tread for traction, and often comes with disc brakes for reliable stopping power. Cross bikes are perfect for adventurous riders who want to explore gravel paths, dirt trails, and even compete in cyclocross races. With a comfortable yet performance-oriented riding position, they offer a thrilling ride that's adaptable to various conditions.",
+    "sizes": ["S", "M", "L"],
+    "price": 1130,
+    "rating": 4
+  },
+  {
+    "id": "5",
+    "imageUrl": "https://i.imgur.com/ScRnMoz.jpg",
+    "title": "Radio Revo 20",
+    "type": "BMX",
+    "desc": "Compact, high-performance bicycles designed for thrilling tricks and stunts. With a smaller frame, 20-inch wheels, and wide handlebars, they're built to handle jumps, ramps, and skatepark features. BMX bikes are known for their durability, allowing riders to push their limits with confidence. These bikes often lack gears and have a simple rear brake setup, making them ideal for agile maneuvering. Whether you're a freestyle enthusiast or a dedicated racer, BMX bikes offer an exciting and adrenaline-packed riding experience.",
+    "sizes": ["S", "M", "L"],
+    "price": 700,
+    "rating": 4
+  },
+  {
+    "id": "6",
+    "imageUrl": "https://i.imgur.com/je64qFr.jpg",
+    "title": "Tall Order Ramp",
+    "type": "BMX",
+    "desc": "Compact, high-performance bicycles designed for thrilling tricks and stunts. With a smaller frame, 20-inch wheels, and wide handlebars, they're built to handle jumps, ramps, and skatepark features. BMX bikes are known for their durability, allowing riders to push their limits with confidence. These bikes often lack gears and have a simple rear brake setup, making them ideal for agile maneuvering. Whether you're a freestyle enthusiast or a dedicated racer, BMX bikes offer an exciting and adrenaline-packed riding experience.",
+    "sizes": ["S", "M", "L"],
+    "price": 760,
+    "rating": 5
+  },
+  {
+    "id": "7",
+    "imageUrl": "https://i.imgur.com/kK79Syj.jpg",
+    "title": "Kink Curb 21",
+    "type": "BMX",
+    "desc": "Compact, high-performance bicycles designed for thrilling tricks and stunts. With a smaller frame, 20-inch wheels, and wide handlebars, they're built to handle jumps, ramps, and skatepark features. BMX bikes are known for their durability, allowing riders to push their limits with confidence. These bikes often lack gears and have a simple rear brake setup, making them ideal for agile maneuvering. Whether you're a freestyle enthusiast or a dedicated racer, BMX bikes offer an exciting and adrenaline-packed riding experience.",
+    "sizes": ["S", "M", "L"],
+    "price": 860,
+    "rating": 4
+  },
+  {
+    "id": "8",
+    "imageUrl": "https://i.imgur.com/9V4VJkl.jpg",
+    "title": "NS Zircus",
+    "type": "BMX",
+    "desc": "Compact, high-performance bicycles designed for thrilling tricks and stunts. With a smaller frame, 20-inch wheels, and wide handlebars, they're built to handle jumps, ramps, and skatepark features. BMX bikes are known for their durability, allowing riders to push their limits with confidence. These bikes often lack gears and have a simple rear brake setup, making them ideal for agile maneuvering. Whether you're a freestyle enthusiast or a dedicated racer, BMX bikes offer an exciting and adrenaline-packed riding experience.",
+    "sizes": ["S", "M", "L"],
+    "price": 960,
+    "rating": 4
+  },
+  {
+    "id": "9",
+    "imageUrl": "https://i.imgur.com/y0sKQMT.jpg",
+    "title": "BMC Kaius",
+    "type": "Gravel",
+    "desc": "Combining features from road and mountain bikes, they come with a sturdy frame and wider tires, usually around 35-45mm, featuring a moderate tread pattern for traction on gravel, dirt, and pavement. Gravel bikes are equipped with a comfortable geometry that allows for longer rides while still maintaining an efficient riding position. With disc brakes for reliable stopping power and ample clearance for mud and debris, these bikes are perfect for exploring off-the-beaten-path trails, long-distance rides, and multi-day adventures. Whether you're seeking new routes or embracing the thrill of unpaved roads, gravel bikes offer a smooth and exhilarating journey.",
+    "sizes": ["S", "M", "L"],
+    "price": 1470,
+    "rating": 5
+  },
+  {
+    "id": "10",
+    "imageUrl": "https://i.imgur.com/F1In1iD.jpg",
+    "title": "Martin Nicasio",
+    "type": "Gravel",
+    "desc": "Combining features from road and mountain bikes, they come with a sturdy frame and wider tires, usually around 35-45mm, featuring a moderate tread pattern for traction on gravel, dirt, and pavement. Gravel bikes are equipped with a comfortable geometry that allows for longer rides while still maintaining an efficient riding position. With disc brakes for reliable stopping power and ample clearance for mud and debris, these bikes are perfect for exploring off-the-beaten-path trails, long-distance rides, and multi-day adventures. Whether you're seeking new routes or embracing the thrill of unpaved roads, gravel bikes offer a smooth and exhilarating journey.",
+    "sizes": ["S", "M", "L"],
+    "price": 1260,
+    "rating": 5
+  },
+  {
+    "id": "11",
+    "imageUrl": "https://i.imgur.com/MU8EdrX.jpg",
+    "title": "Kona Rove",
+    "type": "Gravel",
+    "desc": "Combining features from road and mountain bikes, they come with a sturdy frame and wider tires, usually around 35-45mm, featuring a moderate tread pattern for traction on gravel, dirt, and pavement. Gravel bikes are equipped with a comfortable geometry that allows for longer rides while still maintaining an efficient riding position. With disc brakes for reliable stopping power and ample clearance for mud and debris, these bikes are perfect for exploring off-the-beaten-path trails, long-distance rides, and multi-day adventures. Whether you're seeking new routes or embracing the thrill of unpaved roads, gravel bikes offer a smooth and exhilarating journey.",
+    "sizes": ["S", "M", "L"],
+    "price": 1325,
+    "rating": 5
+  },
+  {
+    "id": "12",
+    "imageUrl": "https://i.imgur.com/2l6HgQl.jpg",
+    "title": "Basso Tera",
+    "type": "Gravel",
+    "desc": "Combining features from road and mountain bikes, they come with a sturdy frame and wider tires, usually around 35-45mm, featuring a moderate tread pattern for traction on gravel, dirt, and pavement. Gravel bikes are equipped with a comfortable geometry that allows for longer rides while still maintaining an efficient riding position. With disc brakes for reliable stopping power and ample clearance for mud and debris, these bikes are perfect for exploring off-the-beaten-path trails, long-distance rides, and multi-day adventures. Whether you're seeking new routes or embracing the thrill of unpaved roads, gravel bikes offer a smooth and exhilarating journey.",
+    "sizes": ["S", "M", "L"],
+    "price": 1260,
+    "rating": 5
+  },
+  {
+    "id": "13",
+    "imageUrl": "https://i.imgur.com/KkOi7bI.jpg",
+    "title": "Focus Atlas",
+    "type": "Gravel",
+    "desc": "Combining features from road and mountain bikes, they come with a sturdy frame and wider tires, usually around 35-45mm, featuring a moderate tread pattern for traction on gravel, dirt, and pavement. Gravel bikes are equipped with a comfortable geometry that allows for longer rides while still maintaining an efficient riding position. With disc brakes for reliable stopping power and ample clearance for mud and debris, these bikes are perfect for exploring off-the-beaten-path trails, long-distance rides, and multi-day adventures. Whether you're seeking new routes or embracing the thrill of unpaved roads, gravel bikes offer a smooth and exhilarating journey.",
+    "sizes": ["S", "M", "L"],
+    "price": 1140,
+    "rating": 5
+  },
+  {
+    "id": "14",
+    "imageUrl": "https://i.imgur.com/3E6tXaO.jpg",
+    "title": "BMC 257",
+    "type": "City",
+    "desc": "Designed for comfortable and practical rides within urban environments. With a focus on convenience, these bicycles feature a relaxed riding position and a step-through or low-bar frame for easy mounting and dismounting, making them suitable for all types of riders, regardless of attire. City bikes often come equipped with fenders to protect from splashes, chain guards to keep clothing clean, and a rear rack for carrying groceries or other essentials. They usually have a simple drivetrain with a few gears for navigating city streets and slight inclines.",
+    "sizes": ["S", "M", "L"],
+    "price": 1340,
+    "rating": 5
+  },
+  {
+    "id": "15",
+    "imageUrl": "https://i.imgur.com/YIXYLAb.jpg",
+    "title": "Cube Ella",
+    "type": "City",
+    "desc": "Designed for comfortable and practical rides within urban environments. With a focus on convenience, these bicycles feature a relaxed riding position and a step-through or low-bar frame for easy mounting and dismounting, making them suitable for all types of riders, regardless of attire. City bikes often come equipped with fenders to protect from splashes, chain guards to keep clothing clean, and a rear rack for carrying groceries or other essentials. They usually have a simple drivetrain with a few gears for navigating city streets and slight inclines.",
+    "sizes": ["S", "M", "L"],
+    "price": 2040,
+    "rating": 5
+  },
+  {
+    "id": "16",
+    "imageUrl": "https://i.imgur.com/0hH55Pn.jpg",
+    "title": "Giant Tourer STA",
+    "type": "City",
+    "desc": "Designed for comfortable and practical rides within urban environments. With a focus on convenience, these bicycles feature a relaxed riding position and a step-through or low-bar frame for easy mounting and dismounting, making them suitable for all types of riders, regardless of attire. City bikes often come equipped with fenders to protect from splashes, chain guards to keep clothing clean, and a rear rack for carrying groceries or other essentials. They usually have a simple drivetrain with a few gears for navigating city streets and slight inclines.",
+    "sizes": ["S", "M", "L"],
+    "price": 1000,
+    "rating": 5
+  },
+  {
+    "id": "17",
+    "imageUrl": "https://i.imgur.com/zkKnGjr.jpg",
+    "title": "Tern Eclipse x22",
+    "type": "City",
+    "desc": "Designed for comfortable and practical rides within urban environments. With a focus on convenience, these bicycles feature a relaxed riding position and a step-through or low-bar frame for easy mounting and dismounting, making them suitable for all types of riders, regardless of attire. City bikes often come equipped with fenders to protect from splashes, chain guards to keep clothing clean, and a rear rack for carrying groceries or other essentials. They usually have a simple drivetrain with a few gears for navigating city streets and slight inclines.",
+    "sizes": ["S", "M", "L"],
+    "price": 1670,
+    "rating": 5
+  },
+  {
+    "id": "18",
+    "imageUrl": "https://i.imgur.com/OX3RPZK.jpg",
+    "title": "Creme Ristretto",
+    "type": "City",
+    "desc": "Designed for comfortable and practical rides within urban environments. With a focus on convenience, these bicycles feature a relaxed riding position and a step-through or low-bar frame for easy mounting and dismounting, making them suitable for all types of riders, regardless of attire. City bikes often come equipped with fenders to protect from splashes, chain guards to keep clothing clean, and a rear rack for carrying groceries or other essentials. They usually have a simple drivetrain with a few gears for navigating city streets and slight inclines.",
+    "sizes": ["S", "M", "L"],
+    "price": 1170,
+    "rating": 5
+  },
+  {
+    "id": "19",
+    "imageUrl": "https://i.imgur.com/UF8ZE6m.jpg",
+    "title": "BMC TwoStroke",
+    "type": "Mountain",
+    "desc": "Often referred to as MTBs, are purpose-built bicycles tailored for tackling challenging off-road terrains. With their robust frames, durable components, and specialized features, these bikes are engineered to provide exceptional performance and control in rugged environments. Equipped with knobby tires that offer optimal traction, mountain bikes ensure stability on uneven surfaces like dirt trails, rocky paths, and forested tracks. Most models incorporate front suspension forks or full-suspension systems to absorb shocks and enhance rider comfort, enabling smoother rides over bumpy terrain.",
+    "sizes": ["S", "M", "L"],
+    "price": 1170,
+    "rating": 5
+  },
+  {
+    "id": "20",
+    "imageUrl": "https://i.imgur.com/bY2UCtJ.jpg",
+    "title": "Cannodale Scalpel",
+    "type": "Mountain",
+    "desc": "Often referred to as MTBs, are purpose-built bicycles tailored for tackling challenging off-road terrains. With their robust frames, durable components, and specialized features, these bikes are engineered to provide exceptional performance and control in rugged environments. Equipped with knobby tires that offer optimal traction, mountain bikes ensure stability on uneven surfaces like dirt trails, rocky paths, and forested tracks. Most models incorporate front suspension forks or full-suspension systems to absorb shocks and enhance rider comfort, enabling smoother rides over bumpy terrain.",
+    "sizes": ["S", "M", "L"],
+    "price": 2370,
+    "rating": 5
+  },
+  {
+    "id": "21",
+    "imageUrl": "https://i.imgur.com/zSFI4mz.jpg",
+    "title": "Giant Talone",
+    "type": "Mountain",
+    "desc": "Often referred to as MTBs, are purpose-built bicycles tailored for tackling challenging off-road terrains. With their robust frames, durable components, and specialized features, these bikes are engineered to provide exceptional performance and control in rugged environments. Equipped with knobby tires that offer optimal traction, mountain bikes ensure stability on uneven surfaces like dirt trails, rocky paths, and forested tracks. Most models incorporate front suspension forks or full-suspension systems to absorb shocks and enhance rider comfort, enabling smoother rides over bumpy terrain.",
+    "sizes": ["S", "M", "L"],
+    "price": 2620,
+    "rating": 5
+  },
+  {
+    "id": "22",
+    "imageUrl": "https://i.imgur.com/X9cfckt.jpg",
+    "title": "Giant Nirvana",
+    "type": "Mountain",
+    "desc": "Often referred to as MTBs, are purpose-built bicycles tailored for tackling challenging off-road terrains. With their robust frames, durable components, and specialized features, these bikes are engineered to provide exceptional performance and control in rugged environments. Equipped with knobby tires that offer optimal traction, mountain bikes ensure stability on uneven surfaces like dirt trails, rocky paths, and forested tracks. Most models incorporate front suspension forks or full-suspension systems to absorb shocks and enhance rider comfort, enabling smoother rides over bumpy terrain.",
+    "sizes": ["S", "M", "L"],
+    "price": 3340,
+    "rating": 5
+  },
+  {
+    "id": "23",
+    "imageUrl": "https://i.imgur.com/NRSd11b.jpg",
+    "title": "Trek Slash",
+    "type": "Mountain",
+    "desc": "Often referred to as MTBs, are purpose-built bicycles tailored for tackling challenging off-road terrains. With their robust frames, durable components, and specialized features, these bikes are engineered to provide exceptional performance and control in rugged environments. Equipped with knobby tires that offer optimal traction, mountain bikes ensure stability on uneven surfaces like dirt trails, rocky paths, and forested tracks. Most models incorporate front suspension forks or full-suspension systems to absorb shocks and enhance rider comfort, enabling smoother rides over bumpy terrain.",
+    "sizes": ["S", "M", "L"],
+    "price": 3620,
+    "rating": 5
+  },
+  {
+    "id": "24",
+    "imageUrl": "https://i.imgur.com/y9aqXAM.jpg",
+    "title": "Trek Domane",
+    "type": "Road",
+    "desc": "Purpose-built machines optimized for swift and efficient rides on paved surfaces. Characterized by their lightweight frames, narrow high-pressure tires, and drop handlebars, these bikes are engineered to offer exceptional speed, agility, and aerodynamics. The geometry promotes a slightly leaned-forward posture, enhancing both power and comfort during long-distance rides or high-paced fitness cycling. Road bikes often boast advanced drivetrain components and a variety of gears, allowing riders to conquer challenging inclines and maintain impressive speeds on flat stretches.",
+    "sizes": ["S", "M", "L"],
+    "price": 1220,
+    "rating": 5
+  },
+  {
+    "id": "25",
+    "imageUrl": "https://i.imgur.com/fHQVima.jpg",
+    "title": "Giant TCR",
+    "type": "Road",
+    "desc": "Purpose-built machines optimized for swift and efficient rides on paved surfaces. Characterized by their lightweight frames, narrow high-pressure tires, and drop handlebars, these bikes are engineered to offer exceptional speed, agility, and aerodynamics. The geometry promotes a slightly leaned-forward posture, enhancing both power and comfort during long-distance rides or high-paced fitness cycling. Road bikes often boast advanced drivetrain components and a variety of gears, allowing riders to conquer challenging inclines and maintain impressive speeds on flat stretches.",
+    "sizes": ["S", "M", "L"],
+    "price": 1920,
+    "rating": 5
+  },
+  {
+    "id": "26",
+    "imageUrl": "https://i.imgur.com/J2QcCzg.jpg",
+    "title": "Giant FastRoad",
+    "type": "Road",
+    "desc": "Purpose-built machines optimized for swift and efficient rides on paved surfaces. Characterized by their lightweight frames, narrow high-pressure tires, and drop handlebars, these bikes are engineered to offer exceptional speed, agility, and aerodynamics. The geometry promotes a slightly leaned-forward posture, enhancing both power and comfort during long-distance rides or high-paced fitness cycling. Road bikes often boast advanced drivetrain components and a variety of gears, allowing riders to conquer challenging inclines and maintain impressive speeds on flat stretches.",
+    "sizes": ["S", "M", "L"],
+    "price": 3020,
+    "rating": 5
+  },
+  {
+    "id": "27",
+    "imageUrl": "https://i.imgur.com/4zhYfB8.jpg",
+    "title": "Colnago c68",
+    "type": "Road",
+    "desc": "Purpose-built machines optimized for swift and efficient rides on paved surfaces. Characterized by their lightweight frames, narrow high-pressure tires, and drop handlebars, these bikes are engineered to offer exceptional speed, agility, and aerodynamics. The geometry promotes a slightly leaned-forward posture, enhancing both power and comfort during long-distance rides or high-paced fitness cycling. Road bikes often boast advanced drivetrain components and a variety of gears, allowing riders to conquer challenging inclines and maintain impressive speeds on flat stretches.",
+    "sizes": ["S", "M", "L"],
+    "price": 3120,
+    "rating": 5
+  },
+  {
+    "id": "28",
+    "imageUrl": "https://i.imgur.com/qMxdizl.jpg",
+    "title": "Scott Speedster",
+    "type": "Road",
+    "desc": "Purpose-built machines optimized for swift and efficient rides on paved surfaces. Characterized by their lightweight frames, narrow high-pressure tires, and drop handlebars, these bikes are engineered to offer exceptional speed, agility, and aerodynamics. The geometry promotes a slightly leaned-forward posture, enhancing both power and comfort during long-distance rides or high-paced fitness cycling. Road bikes often boast advanced drivetrain components and a variety of gears, allowing riders to conquer challenging inclines and maintain impressive speeds on flat stretches.",
+    "sizes": ["S", "M", "L"],
+    "price": 2500,
+    "rating": 5
+  },
+  {
+    "id": "29",
+    "imageUrl": "https://i.imgur.com/3isB5qW.jpg",
+    "title": "Trek Emonda",
+    "type": "Road",
+    "desc": "Purpose-built machines optimized for swift and efficient rides on paved surfaces. Characterized by their lightweight frames, narrow high-pressure tires, and drop handlebars, these bikes are engineered to offer exceptional speed, agility, and aerodynamics. The geometry promotes a slightly leaned-forward posture, enhancing both power and comfort during long-distance rides or high-paced fitness cycling. Road bikes often boast advanced drivetrain components and a variety of gears, allowing riders to conquer challenging inclines and maintain impressive speeds on flat stretches.",
+    "sizes": ["S", "M", "L"],
+    "price": 3600,
+    "rating": 5
+  }
+]
