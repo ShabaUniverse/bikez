@@ -15,7 +15,7 @@ const BagBottom = () => {
   };
 
   let gettingPrice = bagProducts
-    .map((item) => item.price)
+    .map((item) => item.price * item.count)
     .reduce((acc, current) => acc + current, 0);
 
   useEffect(() => {
