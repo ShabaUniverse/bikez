@@ -5,7 +5,7 @@ import "../../styles/App.css";
 
 const Intro = () => {
   return (
-    <div className="home-intro h-screen w-full grid grid-cols-2 justify-center items-center relative">
+    <div className="home-intro h-screen w-full home-grid justify-center items-center relative">
       <div className="home-link-to-shop black-lined-bg h-screen text-center flex flex-col justify-center items-center">
         <h2 className="text-white desc-font shadowing text-3xl uppercase  z-10">
           Adventure Awaits!
