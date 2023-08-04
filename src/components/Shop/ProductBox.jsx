@@ -30,13 +30,13 @@ const ProductBox = ({ title, desc, price, sizes, imageUrl, type, id }) => {
             <img src={imageUrl} alt="" width="250px" />
           </div>
 
-          <div className="two flex flex-col justify-between items-start py-4 w-64">
+          <div className="two flex flex-col justify-between items-start py-4 w-80">
             <div className="title">
               <h2 className="text-lg font-semibold">{title}</h2>
             </div>
 
             <div className="desc">
-              <p>{desc}</p>
+              <p>{type}</p>
             </div>
 
             <div className="size">
