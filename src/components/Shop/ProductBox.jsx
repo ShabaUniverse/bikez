@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { setBagProducts } from "../../data/slices/bagSlice";
-import { useDispatch } from "react-redux"; 
+import { bagSelector, setBagProducts } from "../../data/slices/bagSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const ProductBox = ({ title, desc, price, sizes, imageUrl, type, id }) => {
   const [activeSize, setActiveSize] = useState(0);
+  const { bagProducts } = useSelector(bagSelector);
   const dispatch = useDispatch();
 
-  
   let wholeItem = {
     id,
     title,
@@ -14,11 +14,11 @@ const ProductBox = ({ title, desc, price, sizes, imageUrl, type, id }) => {
     price,
     size: sizes[activeSize],
     imageUrl,
-    type
-  }
+    type,
+  };
 
   const addToBag = () => {
-    dispatch(setBagProducts(wholeItem))
+      dispatch(setBagProducts(wholeItem));
   };
 
   return (
