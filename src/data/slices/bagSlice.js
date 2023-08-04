@@ -11,7 +11,8 @@ const bagSlice = createSlice({
   reducers: {
     setBagProducts(state, action) {
       let findIfAlreadyExists = state.bagProducts.find(
-        (item) => item.id === action.payload.id,
+        (item) =>
+          item.id === action.payload.id && item.size === action.payload.size,
       );
       if (findIfAlreadyExists) {
         findIfAlreadyExists.count++;
@@ -26,10 +27,16 @@ const bagSlice = createSlice({
       state.totalPrice = action.payload;
     },
 
+    removeProduct(state, action) {
+      state.bagProducts.splice(action.payload, 1); //splices by index(action.payload)
+    },
+
     // controling quantity
     plusProduct(state, action) {
       let determineProduct = state.bagProducts.find(
-        (product) => product.id === action.payload.id,
+        (product) =>
+          product.id === action.payload.id &&
+          product.size === action.payload.size,
       );
       if (determineProduct) {
         determineProduct.count += 1;
@@ -38,18 +45,25 @@ const bagSlice = createSlice({
     },
     minusProduct(state, action) {
       let determineProduct = state.bagProducts.find(
-        (product) => product.id === action.payload.id,
-        );
-        if (determineProduct && determineProduct.count > 1) {
-          determineProduct.count -= 1;
-          state.totalPrice -= determineProduct.price;
+        (product) =>
+          product.id === action.payload.id &&
+          product.size === action.payload.size,
+      );
+      if (determineProduct && determineProduct.count > 1) {
+        determineProduct.count -= 1;
+        state.totalPrice -= determineProduct.price;
       }
-
     },
   },
 });
 
 export const bagSelector = (state) => state.bag;
-export const { setBagProducts, clearBag, setTotalPrice, plusProduct, minusProduct } =
-  bagSlice.actions;
+export const {
+  setBagProducts,
+  clearBag,
+  setTotalPrice,
+  removeProduct,
+  plusProduct,
+  minusProduct,
+} = bagSlice.actions;
 export default bagSlice.reducer;
