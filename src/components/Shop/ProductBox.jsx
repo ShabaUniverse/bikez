@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { bagSelector, setBagProducts } from "../../data/slices/bagSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-
 const ProductBox = ({ title, desc, price, sizes, imageUrl, type, id }) => {
   const [activeSize, setActiveSize] = useState(0);
   const { bagProducts } = useSelector(bagSelector);

@@ -30,7 +30,7 @@ const Intro = () => {
         className="w-96 h-96 absolute left-96"
       />
       
-      <div className="another-one bg-[url(images/homeBikeChain.jpg)] bg-cover bg-center h-screen flex flex-col justify-center items-center">
+      <div className="another-one bg-[url(images/homewheel.jpg)] bg-cover bg-center h-screen flex flex-col justify-center items-center">
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const Sort = () => {
   };
 
   return (
-    <div className="sort pt-14">
+    <div className="sort pt-24">
       <div className="sort-container w-4/5 mx-auto">
         <div className="sort-wrapper flex font-medium justify-start items-center">
           <p className="mr-2">Sort by:</p>
