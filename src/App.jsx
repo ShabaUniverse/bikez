@@ -1,3 +1,4 @@
+import DownHeader from "./components/DownHeader";
 import Header from "./components/Header";
 import About from "./pages/About";
 import Bag from "./pages/Bag";

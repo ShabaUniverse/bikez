@@ -10,7 +10,7 @@ const Bag = () => {
   const { bagProducts } = useSelector(bagSelector);
 
   return (
-    <div className="bag pt-12">
+    <div className="bag pt-24">
       <div className="bag-container w-4/5 mx-auto">
         {bagProducts.length > 0 ? (
           <div className="bag-wrapper">
