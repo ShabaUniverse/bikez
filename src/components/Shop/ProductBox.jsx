@@ -22,15 +22,20 @@ const ProductBox = ({ title, desc, price, sizes, imageUrl, type, id }) => {
     dispatch(setBagProducts(wholeItem));
   };
 
+  const handleSizeClick = (event, index) => {
+    event.stopPropagation(); // Prevent event propagation to parent elements
+    setActiveSize(index);
+  };
+
   return (
-    <div className="products-itself border border-white mt-2 ml-1 hover:border-yellow-400">
-      <Link to={`/shop/product/${id}`}>
-        <div className="product-box w-full h-64 pl-2 bg-white flex justify-between ">
-          <div className="one pl-3 flex justify-center items-center">
+    <div className="products-itself border border-white mt-2 ml-3 hover:border-yellow-400">
+      <div className="product-box flex justify-between bg-white">
+        <div className="left flex w-full ">
+          <div className="one pl-3">
             <img src={imageUrl} alt="" width="250px" />
           </div>
 
-          <div className="two flex flex-col justify-between items-start py-4 w-80">
+          <div className="two flex flex-col justify-between items-start py-4 pl-2">
             <div className="title">
               <h2 className="text-lg font-semibold">{title}</h2>
             </div>
@@ -49,29 +54,30 @@ const ProductBox = ({ title, desc, price, sizes, imageUrl, type, id }) => {
                         : "font-lg bg-white w-9 flex justify-center mx-1 cursor-pointer"
                     }
                     key={i}
-                    onClick={() => setActiveSize(i)}>
+                    onClick={(event) => handleSizeClick(event, i)}>
                     {size}
                   </p>
                 ))}
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="three py-4 px-3 flex flex-col justify-between items-end w-28">
-            <div className="price">
-              <p className="font-bold">$ {price}</p>
-            </div>
+        <div className="right w-1/4 py-4 px-3 flex flex-col justify-between items-end">
+          <div className="price">
+            <p className="font-bold">$ {price}</p>
+          </div>
 
-            <div className="add">
-              <p
-                className=" w-8 h-8 bg-yellow-400 text-white flex justify-center items-center font-bold cursor-pointer hover:bg-yellow-500"
-                onClick={() => addToBag()}>
-                +
-              </p>
-            </div>
+          <div className="add flex">
+            <Link to={`/shop/product/${id}`} className="mr-2 font-semibold text-white flex justify-center items-center h-8 w-24 bg-yellow-400 hover:bg-yellow-500">view more</Link>
+            <p
+              className=" w-8 h-8 bg-yellow-400 text-white flex justify-center items-center font-bold cursor-pointer hover:bg-yellow-500"
+              onClick={() => addToBag()}>
+              +
+            </p>
           </div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 };
