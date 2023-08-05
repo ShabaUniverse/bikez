@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/App.css";
+import "animate.css";
+
 
 
 const Intro = () => {
@@ -18,7 +20,7 @@ const Intro = () => {
         </h2>
         <br />
         <Link
-          className="text-white py-2 px-6 rounded-3xl border-2 border-yellow-400 hover:bg-yellow-500 font-semibold z-10"
+          className="text-white py-2 px-6 rounded-3xl border-2 border-yellow-400 hover:bg-yellow-500 font-semibold z-10 animate-bounce"
           to="/shop"
         >
           Go to shop
@@ -27,7 +29,7 @@ const Intro = () => {
       <img
         src="/images/homeBikeTransparent.png"
         alt=""
-        className="w-96 h-96 absolute left-96"
+        className="animate__animated animate__fadeInLeft w-96 h-96 absolute left-96"
       />
       
       <div className="another-one bg-[url(images/homewheel.jpg)] bg-cover bg-center h-screen flex flex-col justify-center items-center">

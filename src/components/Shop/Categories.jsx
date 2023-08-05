@@ -10,7 +10,7 @@ const Categories = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="categories pt-20 px-5 bg-yellow-400 h-screen sticky top-0">
+    <div className="animate__animated animate__fadeInLeft categories pt-20 px-5 bg-yellow-400 h-screen sticky top-0">
       <div className="categories-list flex flex-col justify-center h-full">
         {categories.map((category) => (
           <p

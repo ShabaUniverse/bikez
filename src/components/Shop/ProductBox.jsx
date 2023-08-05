@@ -27,7 +27,7 @@ const ProductBox = ({ title, desc, price, sizes, imageUrl, type, id }) => {
   };
 
   return (
-    <div className="products-itself border border-white mt-2 ml-3 hover:border-yellow-400">
+    <div className="animate__animated animate__fadeInRight products-itself border border-white mt-2 ml-3 hover:border-yellow-400">
       <div className="product-box flex justify-between bg-white">
         <div className="left flex w-full ">
           <div className="one pl-3">

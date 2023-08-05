@@ -43,17 +43,17 @@ const Header = () => {
                 Shop
               </Link>
               <Link
-                to="/contact"
+                to="/about"
                 className="font-semibold ml-3 text-white hover:text-yellow-400">
                 About
               </Link>
               <Link
-                to="/about"
+                to="/contact"
                 className="font-semibold ml-3 text-white hover:text-yellow-400">
                 Contact
               </Link>
               <Link
-                to="/sevice"
+                to="/service"
                 className="font-semibold ml-3 text-white hover:text-yellow-400">
                 Service
               </Link>

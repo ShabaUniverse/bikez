@@ -1,4 +1,3 @@
-import DownHeader from "./components/DownHeader";
 import Header from "./components/Header";
 import About from "./pages/About";
 import Bag from "./pages/Bag";
@@ -8,6 +7,7 @@ import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import "./styles/App.css";
 import { Routes, Route } from "react-router-dom";
+import "animate.css";
 
 function App() {
   return (
