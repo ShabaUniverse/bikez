@@ -21,6 +21,12 @@ const Pagination = () => {
   let preSetCurrentProducts = [];
 
 
+  const onClickSetPage = (item) => {
+    dispatch(setCurrentPage(item));
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+
+
   useEffect(() => {
     let sorted;
     if (sortValue === "price") {
@@ -55,7 +61,7 @@ const Pagination = () => {
                   ? "mx-2 border border-yellow-400 px-3 cursor-pointer bg-yellow-400 text-white"
                   : "mx-2 border border-yellow-400 px-3 cursor-pointer"
               }
-              onClick={() => dispatch(setCurrentPage(item))}>
+              onClick={() => onClickSetPage(item)}>
               {item}
             </p>
           ))}

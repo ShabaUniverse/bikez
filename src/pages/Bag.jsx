@@ -1,13 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { bagSelector } from "../data/slices/bagSlice";
 import { clearBag, setTotalPrice } from "../data/slices/bagSlice";
 import BagTable from "../components/Bag/BagTable";
 import BagProduct from "../components/Bag/BagProduct";
 import BagBottom from "../components/Bag/BagBottom";
+import { useLocation } from "react-router-dom";
 
 const Bag = () => {
   const { bagProducts } = useSelector(bagSelector);
+  const location = useLocation();
+  
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [location.pathname]);
+
 
   return (
     <div className="bag pt-24">

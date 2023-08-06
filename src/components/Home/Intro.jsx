@@ -13,7 +13,7 @@ const Intro = () => {
           Adventure Awaits!
         </h2>
         <h2 className="text-yellow-400 desc-font shadowing text-3xl uppercase  z-10">
-          Discover New Bikes
+          Discover Bikes
         </h2>
         <h2 className="text-white desc-font shadowing text-3xl uppercase z-10">
           in Our Shop!
