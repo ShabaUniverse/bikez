@@ -62,6 +62,11 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* for table */
 
 table {
@@ -89,7 +94,7 @@ th {
 
 /* mfucking animations */
 
-.community-wrapper {
+.moving-image {
   animation: moveImage 7s linear infinite;
   height: 150%;
   width: 150%;
