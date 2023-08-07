@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import "../../styles/App.css";
 import "animate.css";
 
-
-
 const Intro = () => {
   return (
     <div className="home-intro h-screen w-full home-grid justify-center items-center relative">
