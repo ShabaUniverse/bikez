@@ -9,7 +9,7 @@ export default {
       },
       width: {
         96: "29rem",
-      },
+      }
     },
   },
   plugins: [],
