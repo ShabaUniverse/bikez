@@ -43,19 +43,14 @@ const Header = () => {
                 Shop
               </Link>
               <Link
-                to="/about"
-                className="font-semibold ml-3 text-white hover:text-yellow-400">
-                About
-              </Link>
-              <Link
-                to="/contact"
-                className="font-semibold ml-3 text-white hover:text-yellow-400">
-                Contact
-              </Link>
-              <Link
                 to="/service"
                 className="font-semibold ml-3 text-white hover:text-yellow-400">
                 Service
+              </Link>
+              <Link
+                to="/about"
+                className="font-semibold ml-3 text-white hover:text-yellow-400">
+                About
               </Link>
             </div>
 

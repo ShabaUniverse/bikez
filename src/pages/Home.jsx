@@ -4,6 +4,7 @@ import Intro from "../components/Home/Intro";
 import Community from "../components/Home/Community";
 import { useLocation } from "react-router-dom";
 import RunningText from "../components/Home/RunningText";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const location = useLocation();
@@ -17,6 +18,7 @@ const Home = () => {
         <Intro />
         <RunningText />
         <Community />
+        <Footer />
       </div>
     </div>
   );

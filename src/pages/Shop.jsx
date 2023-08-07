@@ -16,6 +16,7 @@ import { fetchProducts } from "../data/slices/productSlice";
 import Pagination from "../components/Shop/Pagination";
 import { paginationSelector } from "../data/slices/paginationSlice";
 import { setCurrentProducts } from "../data/slices/paginationSlice";
+import Footer from "../components/Footer";
 
 const Shop = () => {
   const { currentProducts } = useSelector(paginationSelector);
@@ -29,6 +30,10 @@ const Shop = () => {
   useEffect(() => {
     dispatch(fetchProducts());
   }, [activeCategory, sortValue]);
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [location.pathname]);
 
   return (
     <div className="shop">
@@ -52,6 +57,7 @@ const Shop = () => {
           <Pagination filteredProducts={filteredProducts} />
         )}
       </div>
+      <Footer />
     </div>
   );
 };
