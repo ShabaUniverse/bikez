@@ -3,6 +3,7 @@ import "../styles/App.css";
 import Intro from "../components/Home/Intro";
 import Community from "../components/Home/Community";
 import { useLocation } from "react-router-dom";
+import RunningText from "../components/Home/RunningText";
 
 const Home = () => {
   const location = useLocation();
@@ -14,6 +15,7 @@ const Home = () => {
     <div className="home">
       <div className="home-wrapper">
         <Intro />
+        <RunningText />
         <Community />
       </div>
     </div>

@@ -89,8 +89,10 @@ th {
 
 /* mfucking animations */
 
-.community-wrapper{
+.community-wrapper {
   animation: moveImage 7s linear infinite;
+  height: 150%;
+  width: 150%;
 }
 
 @keyframes moveImage {
@@ -98,17 +100,19 @@ th {
     transform: translate(0, 0) scale(1);
   }
   25% {
-    transform: translate(10px, 10px) scale(1.1);
+    transform: translate(10px, 0) scale(1.05);
   }
   50% {
-    transform: translate(-10px, -10px) scale(1.2);
+    transform: translate(10px, 10px) scale(1.1);
   }
   75% {
-    transform: translate(0, -20px) scale(1.1);
+    transform: translate(0, 10px) scale(1.05);
   }
-
   100% {
     transform: translate(0, 0) scale(1);
   }
 }
+
+
+
 
