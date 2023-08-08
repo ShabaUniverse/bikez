@@ -4,7 +4,7 @@ import '../styles/App.css';
 
 const Footer = () => {
   return (
-    <div className="footer w-full py-10 bg-stone-600">
+    <div className="footer w-full py-3 bg-stone-600">
       <div className="footer-container w-4/5 mx-auto">
         <div className="footer-wrapper flex flex-col justify-center items-center">
           <div className="social-links flex justify-center items-center">

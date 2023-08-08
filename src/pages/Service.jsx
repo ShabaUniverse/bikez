@@ -3,55 +3,119 @@ import "../styles/App.css";
 
 const Service = () => {
   return (
-    <div className="service pt-20">
-      <div className="service-container">
-        <div className="service-wrapper">
-          <div className="first-service service-grid h-96 bg-yellow-400">
-            <div className="image-part h-full w-full overflow-hidden">
-              <div className="moving-image  bg-[url(images/bikeTesting.jpg)] bg-cover bg-center h-full w-full"></div>
-            </div>
-            <div className="desc-part flex flex-col justify-center items-center">
-              <h2 className=" w-1/3 text-center font-semibold text-2xl text-white desc-font">
-                Bicycle Scanning and Setting
-              </h2>
-              <p className=" w-2/3 text-center font-medium text-xl desc-font">
-                Enhancing Performance and Safety. Regular scanning helps you
-                predict potential risks and adjust your cycling strategy
-                accordingly. This can include preparing for turns, stops, or
-                changes in road conditions.
-              </p>
-              <button className=" px-8 py-2 border border-stone-600 rounded-2xl text-white"> Go </button>
-            </div>
+    <div className="service pt-20 w-full">
+      {/* service page title */}
+      <div className="serviceTop h-80 w-full bg-[url(/images/serviceBg.jpg)] bg-center bg-cover flex flex-col justify-center items-center">
+        <h2 className="desc-font text-3xl text-white font-semibold">
+          Pedal Perfect
+        </h2>
+        <h3 className="desc-font text-xl text-white font-medium">
+          Expert Bicycle Service and Repairs
+        </h3>
+      </div>
+
+      {/* services section */}
+      <div className="service-container w-4/5 mx-auto">
+        <div className="service-section pt-10 flex flex-col justify-center items-center">
+          <div className="section-desc">
+            <h2 className="desc-font text-3xl font-semibold">Our Services</h2>
           </div>
 
-          <div className="second-service service-grid h-96 bg-stone-600">
-            <div className="desc-part flex flex-col justify-center items-center">
-              <h2 className=" w-1/3 text-center font-semibold text-2xl text-white desc-font">
-                Your Bicycle Tire Fitting Experts
-              </h2>
-              <p className=" w-2/3 text-center font-medium text-yellow-400 text-xl desc-font">
-                Our tire fitting service is prompt and efficient, ensuring that
-                you get back on the road quickly with perfectly fitted tires.
-              </p>
-              <button className=" px-8 py-2 border border-yellow-400 rounded-2xl text-white"> Go </button>
+          <div className="service-list flex justify-between items-center">
+            <div className="first flex flex-col justify-center items-center">
+              <div className="image">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  viewBox="0 0 98.18 122.88"
+                  height='60px'
+                  width='60px'>
+                  <defs>
+                    <style></style>
+                  </defs>
+                  <title>rules</title>
+                  <path
+                    class="cls-1"
+                    d="M27.23,65.62a1.75,1.75,0,0,1,2.5,0,1.8,1.8,0,0,1,0,2.53l-3,3.06,3,3.06a1.77,1.77,0,0,1-2.51,2.51l-3-3-3,3a1.75,1.75,0,0,1-2.5,0,1.81,1.81,0,0,1,0-2.53l3-3.06-3-3.06a1.78,1.78,0,0,1,0-2.51,1.74,1.74,0,0,1,2.48,0l3,3,3-3ZM25.85,22A3.93,3.93,0,0,1,22,18.12V16.81H5.71a.62.62,0,0,0-.59.6v99.71a.6.6,0,0,0,.59.59H92.47a.6.6,0,0,0,.59-.59V17.41a.62.62,0,0,0-.59-.59H76.53v1.31A3.93,3.93,0,0,1,72.65,22ZM5.75,122.88A5.76,5.76,0,0,1,0,117.13V17.41a5.76,5.76,0,0,1,5.75-5.75H22V10.44A3.91,3.91,0,0,1,25.9,6.55h6.92V4.3A4.36,4.36,0,0,1,37.11,0h24a4.37,4.37,0,0,1,4.3,4.3V6.56H72.6a3.91,3.91,0,0,1,3.89,3.89v1.22H92.43a5.76,5.76,0,0,1,5.75,5.75v99.71a5.76,5.76,0,0,1-5.75,5.75ZM78.19,99.05a2.6,2.6,0,0,0,0-5.2H43.57a2.6,2.6,0,1,0,0,5.2H78.19Zm0-50a2.6,2.6,0,1,0,0-5.2H43.57a2.6,2.6,0,0,0,0,5.2Zm0,24.64a2.6,2.6,0,1,0,0-5.2H43.57a2.6,2.6,0,1,0,0,5.2ZM18.83,96.31a2.31,2.31,0,0,1,3.84-2.57l1.26,1.87,5-6.07a2.3,2.3,0,1,1,3.56,2.92l-6.9,8.4a2.49,2.49,0,0,1-.55.52,2.31,2.31,0,0,1-3.2-.63l-3-4.44Zm.63-50.57a2.32,2.32,0,0,1,3.21.63l1.26,1.87,5-6.07a2.3,2.3,0,1,1,3.56,2.92l-6.9,8.4A2.49,2.49,0,0,1,25,54a2.31,2.31,0,0,1-3.2-.63l-3-4.44h0a2.31,2.31,0,0,1,.63-3.2Z"
+                  />
+                </svg>
+              </div>
+              <div className="service-desc text-center">
+                <h3>BikeScan Pro. Effortless Bicycle Scanning and Precision Settings</h3>
+              </div>
             </div>
-            <div className="image-part h-full w-full overflow-hidden">
-              <div className="moving-image  bg-[url(images/bikeTires.jpg)] bg-cover bg-center h-full w-full"></div>
-            </div>
-          </div>
 
-          <div className="first-service service-grid h-96 bg-yellow-400 ">
-            <div className="image-part h-full w-full overflow-hidden">
-              <div className="moving-image  bg-[url(images/bikeTours.jpg)] bg-cover bg-center h-full w-full"></div>
+            <div className="first flex flex-col justify-center items-center">
+              <div className="image">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  viewBox="0 0 98.18 122.88"
+                  height='60px'
+                  width='60px'>
+                  <defs>
+                    <style></style>
+                  </defs>
+                  <title>rules</title>
+                  <path
+                    class="cls-1"
+                    d="M27.23,65.62a1.75,1.75,0,0,1,2.5,0,1.8,1.8,0,0,1,0,2.53l-3,3.06,3,3.06a1.77,1.77,0,0,1-2.51,2.51l-3-3-3,3a1.75,1.75,0,0,1-2.5,0,1.81,1.81,0,0,1,0-2.53l3-3.06-3-3.06a1.78,1.78,0,0,1,0-2.51,1.74,1.74,0,0,1,2.48,0l3,3,3-3ZM25.85,22A3.93,3.93,0,0,1,22,18.12V16.81H5.71a.62.62,0,0,0-.59.6v99.71a.6.6,0,0,0,.59.59H92.47a.6.6,0,0,0,.59-.59V17.41a.62.62,0,0,0-.59-.59H76.53v1.31A3.93,3.93,0,0,1,72.65,22ZM5.75,122.88A5.76,5.76,0,0,1,0,117.13V17.41a5.76,5.76,0,0,1,5.75-5.75H22V10.44A3.91,3.91,0,0,1,25.9,6.55h6.92V4.3A4.36,4.36,0,0,1,37.11,0h24a4.37,4.37,0,0,1,4.3,4.3V6.56H72.6a3.91,3.91,0,0,1,3.89,3.89v1.22H92.43a5.76,5.76,0,0,1,5.75,5.75v99.71a5.76,5.76,0,0,1-5.75,5.75ZM78.19,99.05a2.6,2.6,0,0,0,0-5.2H43.57a2.6,2.6,0,1,0,0,5.2H78.19Zm0-50a2.6,2.6,0,1,0,0-5.2H43.57a2.6,2.6,0,0,0,0,5.2Zm0,24.64a2.6,2.6,0,1,0,0-5.2H43.57a2.6,2.6,0,1,0,0,5.2ZM18.83,96.31a2.31,2.31,0,0,1,3.84-2.57l1.26,1.87,5-6.07a2.3,2.3,0,1,1,3.56,2.92l-6.9,8.4a2.49,2.49,0,0,1-.55.52,2.31,2.31,0,0,1-3.2-.63l-3-4.44Zm.63-50.57a2.32,2.32,0,0,1,3.21.63l1.26,1.87,5-6.07a2.3,2.3,0,1,1,3.56,2.92l-6.9,8.4A2.49,2.49,0,0,1,25,54a2.31,2.31,0,0,1-3.2-.63l-3-4.44h0a2.31,2.31,0,0,1,.63-3.2Z"
+                  />
+                </svg>
+              </div>
+              <div className="service-desc text-center">
+                <h3>BikeScan Pro. Effortless Bicycle Scanning and Precision Settings</h3>
+              </div>
             </div>
-            <div className="desc-part flex flex-col justify-center items-center">
-              <h2 className=" w-1/3 text-center font-semibold text-2xl text-white desc-font">Explore Unforgettable Cycling Tours</h2>
-              <p className=" w-2/3 text-center font-medium text-stone-600 text-xl desc-font">
-                Whether you're a leisure cyclist or a seasoned pro, our tours
-                offer something for everyone. Join us for an unforgettable
-                adventure on two wheels!
-              </p>
-              <button className=" px-8 py-2 border border-stone-600 rounded-2xl text-white"> Go </button>
+
+            <div className="first flex flex-col justify-center items-center">
+              <div className="image">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  viewBox="0 0 98.18 122.88"
+                  height='60px'
+                  width='60px'>
+                  <defs>
+                    <style></style>
+                  </defs>
+                  <title>rules</title>
+                  <path
+                    class="cls-1"
+                    d="M27.23,65.62a1.75,1.75,0,0,1,2.5,0,1.8,1.8,0,0,1,0,2.53l-3,3.06,3,3.06a1.77,1.77,0,0,1-2.51,2.51l-3-3-3,3a1.75,1.75,0,0,1-2.5,0,1.81,1.81,0,0,1,0-2.53l3-3.06-3-3.06a1.78,1.78,0,0,1,0-2.51,1.74,1.74,0,0,1,2.48,0l3,3,3-3ZM25.85,22A3.93,3.93,0,0,1,22,18.12V16.81H5.71a.62.62,0,0,0-.59.6v99.71a.6.6,0,0,0,.59.59H92.47a.6.6,0,0,0,.59-.59V17.41a.62.62,0,0,0-.59-.59H76.53v1.31A3.93,3.93,0,0,1,72.65,22ZM5.75,122.88A5.76,5.76,0,0,1,0,117.13V17.41a5.76,5.76,0,0,1,5.75-5.75H22V10.44A3.91,3.91,0,0,1,25.9,6.55h6.92V4.3A4.36,4.36,0,0,1,37.11,0h24a4.37,4.37,0,0,1,4.3,4.3V6.56H72.6a3.91,3.91,0,0,1,3.89,3.89v1.22H92.43a5.76,5.76,0,0,1,5.75,5.75v99.71a5.76,5.76,0,0,1-5.75,5.75ZM78.19,99.05a2.6,2.6,0,0,0,0-5.2H43.57a2.6,2.6,0,1,0,0,5.2H78.19Zm0-50a2.6,2.6,0,1,0,0-5.2H43.57a2.6,2.6,0,0,0,0,5.2Zm0,24.64a2.6,2.6,0,1,0,0-5.2H43.57a2.6,2.6,0,1,0,0,5.2ZM18.83,96.31a2.31,2.31,0,0,1,3.84-2.57l1.26,1.87,5-6.07a2.3,2.3,0,1,1,3.56,2.92l-6.9,8.4a2.49,2.49,0,0,1-.55.52,2.31,2.31,0,0,1-3.2-.63l-3-4.44Zm.63-50.57a2.32,2.32,0,0,1,3.21.63l1.26,1.87,5-6.07a2.3,2.3,0,1,1,3.56,2.92l-6.9,8.4A2.49,2.49,0,0,1,25,54a2.31,2.31,0,0,1-3.2-.63l-3-4.44h0a2.31,2.31,0,0,1,.63-3.2Z"
+                  />
+                </svg>
+              </div>
+              <div className="service-desc text-center">
+                <h3>BikeScan Pro. Effortless Bicycle Scanning and Precision Settings</h3>
+              </div>
+            </div>
+
+            <div className="first flex flex-col justify-center items-center">
+              <div className="image">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  viewBox="0 0 98.18 122.88"
+                  height='60px'
+                  width='60px'>
+                  <defs>
+                    <style></style>
+                  </defs>
+                  <title>rules</title>
+                  <path
+                    class="cls-1"
+                    d="M27.23,65.62a1.75,1.75,0,0,1,2.5,0,1.8,1.8,0,0,1,0,2.53l-3,3.06,3,3.06a1.77,1.77,0,0,1-2.51,2.51l-3-3-3,3a1.75,1.75,0,0,1-2.5,0,1.81,1.81,0,0,1,0-2.53l3-3.06-3-3.06a1.78,1.78,0,0,1,0-2.51,1.74,1.74,0,0,1,2.48,0l3,3,3-3ZM25.85,22A3.93,3.93,0,0,1,22,18.12V16.81H5.71a.62.62,0,0,0-.59.6v99.71a.6.6,0,0,0,.59.59H92.47a.6.6,0,0,0,.59-.59V17.41a.62.62,0,0,0-.59-.59H76.53v1.31A3.93,3.93,0,0,1,72.65,22ZM5.75,122.88A5.76,5.76,0,0,1,0,117.13V17.41a5.76,5.76,0,0,1,5.75-5.75H22V10.44A3.91,3.91,0,0,1,25.9,6.55h6.92V4.3A4.36,4.36,0,0,1,37.11,0h24a4.37,4.37,0,0,1,4.3,4.3V6.56H72.6a3.91,3.91,0,0,1,3.89,3.89v1.22H92.43a5.76,5.76,0,0,1,5.75,5.75v99.71a5.76,5.76,0,0,1-5.75,5.75ZM78.19,99.05a2.6,2.6,0,0,0,0-5.2H43.57a2.6,2.6,0,1,0,0,5.2H78.19Zm0-50a2.6,2.6,0,1,0,0-5.2H43.57a2.6,2.6,0,0,0,0,5.2Zm0,24.64a2.6,2.6,0,1,0,0-5.2H43.57a2.6,2.6,0,1,0,0,5.2ZM18.83,96.31a2.31,2.31,0,0,1,3.84-2.57l1.26,1.87,5-6.07a2.3,2.3,0,1,1,3.56,2.92l-6.9,8.4a2.49,2.49,0,0,1-.55.52,2.31,2.31,0,0,1-3.2-.63l-3-4.44Zm.63-50.57a2.32,2.32,0,0,1,3.21.63l1.26,1.87,5-6.07a2.3,2.3,0,1,1,3.56,2.92l-6.9,8.4A2.49,2.49,0,0,1,25,54a2.31,2.31,0,0,1-3.2-.63l-3-4.44h0a2.31,2.31,0,0,1,.63-3.2Z"
+                  />
+                </svg>
+              </div>
+              <div className="service-desc text-center">
+                <h3>BikeScan Pro. Effortless Bicycle Scanning and Precision Settings</h3>
+              </div>
             </div>
           </div>
         </div>
