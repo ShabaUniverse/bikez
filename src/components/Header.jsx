@@ -47,11 +47,7 @@ const Header = () => {
                 className="font-semibold ml-3 text-white hover:text-yellow-400">
                 Service
               </Link>
-              <Link
-                to="/about"
-                className="font-semibold ml-3 text-white hover:text-yellow-400">
-                About
-              </Link>
+              
             </div>
 
             <div className="cart ml-4 flex">
@@ -71,6 +67,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+
         <div className="sub-header flex ">
           <div className="left w-1/4 py-3">
             <p className="text-white font-semibold text-xs">Your Journey, Our Wheels.</p>
