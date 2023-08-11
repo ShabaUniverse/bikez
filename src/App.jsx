@@ -1,5 +1,4 @@
 import Header from "./components/Header";
-import About from "./pages/About";
 import Bag from "./pages/Bag";
 import DetailedProduct from "./pages/DetailedProduct";
 import Home from "./pages/Home";
