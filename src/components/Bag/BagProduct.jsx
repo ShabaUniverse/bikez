@@ -33,19 +33,19 @@ const BagProduct = () => {
   };
 
   return (
-    <div className="bag-items-box mt-3">
+    <div className="bag-items-box">
       {bagProducts.map((item, index) => (
-        <div className="bag-item flex mt-2 bg-white" key={index}>
-          <div className="title mt-2 px-5 flex justify-between items-center w-3/6 font-semibold">
-            <img src={item.imageUrl} alt="" className="w-36" />
-            <p className="text-lg">{item.title}</p>
+        <div className="bag-item flex mt-2 bg-white md:w-3/4 mx-auto" key={index}>
+          <div className="title mt-2 flex flex-col font-semibold">
+            <img src={item.imageUrl} alt="" className=" w-36" />
+            <p className=" text-base text-center md:ml-2">{item.title}</p>
           </div>
 
           <div className="size w-1/5 font-semibold flex justify-center items-center">
             <p className="text-lg -translate-x-2/4">{item.size}</p>
           </div>
 
-          <div className="quantity w-2/5 font-semibold flex justify-center items-center">
+          <div className="quantity w-2/5 md:w-1/6 font-semibold flex justify-center items-center">
             <span
               className={
                 item.count === 1
@@ -67,7 +67,7 @@ const BagProduct = () => {
             <p className="text-lg">$ {item.price}</p>
           </div>
 
-          <div className="remove w-1/5 font-semibold flex justify-center items-center text-2xl">
+          <div className="remove w-1/6 font-semibold flex justify-center items-center text-2xl">
             <p className="cursor-pointer" onClick={() => deleteProduct(item)}>
               🗑
             </p>

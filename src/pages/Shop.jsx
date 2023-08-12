@@ -37,13 +37,14 @@ const Shop = () => {
 
   return (
     <div className="shop">
-      <div className="shop-wrapper w-4/5 mx-auto">
-        <div className="shop-sides shop-grid">
+      <div className="shop-wrapper max-w-6xl mx-auto">
+        <div className="shop-sides lg:grid lg:grid-cols-4">
+
           <div className="leftSide">
             <Categories />
           </div>
 
-          <div className="rightSide">
+          <div className="rightSide lg:col-span-3">
             <Sort />
             {status === "loading" && <Loading />}
             {status === "succeeded" && (

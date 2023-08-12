@@ -26,7 +26,7 @@ const Intro = () => {
       <img
         src="/images/homeBikeTransparent.png"
         alt=""
-        className="animate__animated animate__fadeInLeft hidden lg:flex absolute left-1/4 top-[10%] w-96"
+        className="animate__animated animate__fadeInLeft hidden md:flex absolute left-1/4 top-[10%] w-96"
       />
       <div className="bg-[url(images/homewheel.jpg)] bg-cover bg-center "></div>
     </div>

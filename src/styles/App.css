@@ -19,6 +19,13 @@ body {
 }
 /* fonts */
 
+/* sticky */
+
+.sticker {
+  position: sticky;
+  top: 0;
+}
+
 .logo-font {
   font-family: "Black Ops One", cursive;
 }

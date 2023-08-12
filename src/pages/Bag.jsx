@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { bagSelector } from "../data/slices/bagSlice";
-import { clearBag, setTotalPrice } from "../data/slices/bagSlice";
-import BagTable from "../components/Bag/BagTable";
 import BagProduct from "../components/Bag/BagProduct";
 import BagBottom from "../components/Bag/BagBottom";
 import { useLocation } from "react-router-dom";
@@ -17,11 +15,10 @@ const Bag = () => {
 
 
   return (
-    <div className="bag pt-24">
-      <div className="bag-container w-4/5 mx-auto">
+    <div className="bag p-2">
+      <div className="bag-container mx-auto">
         {bagProducts.length > 0 ? (
           <div className="bag-wrapper">
-            <BagTable />
             <BagProduct />
             <BagBottom />
           </div>

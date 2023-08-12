@@ -19,24 +19,29 @@ const DetailedProduct = () => {
   }, []);
 
   return (
-    <div className="pt-16 bg-white">
-      <div className="w-4/5 mx-auto">
+    <div className=" bg-white pt-10">
+      <div className=" max-w-6xl px-4 mx-auto">
         {detailedData && (
-          <div className="grid grid-cols-2 gap-8">
-            <div className="col-span-1">
-              <img src={detailedData.imageUrl} alt={detailedData.title} />
+          <div className="grid place-items-center lg:grid-cols-2">
+            <div>
+              <img
+                src={detailedData.imageUrl}
+                alt={detailedData.title}
+                className="w-96"
+              />
             </div>
-            <div className="col-span-1 flex flex-col justify-center pl-14">
+
+            <div className="">
               <h1 className="text-2xl font-bold">{detailedData.title}</h1>
               <p className="text-yellow-400 font-medium">{detailedData.type}</p>
               <h2 className=" text-base font-semibold">{detailedData.desc}</h2>
               <RatingStars rating={detailedData.rating} />
-              <div className="flex items-center">
-                <p className="font-medium mr-2">Available sizes</p>
+              <div className="">
+                <p className="font-medium">Available sizes</p>
                 {detailedData.sizes.map((size, index) => (
                   <span
                     key={index}
-                    className="w-8 h-8 flex items-center justify-center bg-yellow-400 text-white font-bold rounded-full mr-2">
+                    className="bg-yellow-400 text-white px-3 mr-1 font-bold rounded-full">
                     {size}
                   </span>
                 ))}
@@ -51,7 +56,7 @@ const DetailedProduct = () => {
         )}
 
         {detailedData && (
-          <div className="geometry">
+          <div className="geometry hidden md:flex md:my-10">
             <table>
               <tr>
                 <th>Size</th>
@@ -95,6 +100,75 @@ const DetailedProduct = () => {
                 <td>1070mm</td>
                 <td>550mm</td>
                 <td>580mm</td>
+                <td>150mm</td>
+              </tr>
+            </table>
+          </div>
+        )}
+
+        {detailedData && (
+          <div className="geometry my-10 md:hidden">
+            <table>
+              <tr>
+                <th>Size</th>
+                <th>S</th>
+                <th>M</th>
+                <th>L</th>
+              </tr>
+
+              <tr>
+                <th>Rider Height</th>
+                <td>5'0" - 5'5" (152cm - 165cm)</td>
+                <td>5'6" - 5'10" (168cm - 178cm)</td>
+                <td>5'11" - 6'3" (180cm - 191cm)</td>
+              </tr>
+
+              <tr>
+                <th>Stack</th>
+                <td>530mm</td>
+                <td>550mm</td>
+                <td>570mm</td>
+              </tr>
+
+              <tr>
+                <th>Reach</th>
+                <td>380mm</td>
+                <td>390mm</td>
+                <td>410mm</td>
+              </tr>
+
+              <tr>
+                <th>BB Drop</th>
+                <td>70mm</td>
+                <td>68mm</td>
+                <td>66mm</td>
+              </tr>
+
+              <tr>
+                <th>Wheelbase</th>
+                <td>1030mm</td>
+                <td>1050mm</td>
+                <td>1070mm</td>
+              </tr>
+
+              <tr>
+                <th>Seat Tube Length</th>
+                <td>490mm</td>
+                <td>520mm</td>
+                <td>550mm</td>
+              </tr>
+
+              <tr>
+                <th>Top Tube Length</th>
+                <td>540mm</td>
+                <td>560mm</td>
+                <td>580mm</td>
+              </tr>
+
+              <tr>
+                <th>Head Tube Length</th>
+                <td>120mm</td>
+                <td>130mm</td>
                 <td>150mm</td>
               </tr>
             </table>

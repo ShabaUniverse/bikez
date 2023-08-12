@@ -26,31 +26,36 @@ const ProductBox = ({ title, desc, price, sizes, imageUrl, type, id }) => {
     setActiveSize(index);
   };
 
+  let shortDesc = desc.split(' ').splice(0, 15).join(' ');
+
   return (
-    <div className="animate__animated animate__fadeInRight products-itself border border-white mt-2 ml-3 hover:border-yellow-400">
-      <div className="product-box flex justify-between bg-white">
-        <div className="left flex w-full ">
-          <div className="one pl-3">
+    <div className="animate__animated animate__fadeInRight border my-2 border-white hover:border-yellow-400">
+      <div className="product-box grid grid-cols-3 gap-4 p-2 bg-white">
+        <div className="left">
+          <div className="">
             <img src={imageUrl} alt="" width="250px" />
           </div>
+        </div>
 
-          <div className="two flex flex-col justify-between items-start py-4 pl-2">
-            <div className="title">
-              <h2 className="text-lg font-semibold">{title}</h2>
+        <div className="middle flex flex-col justify-between">
+          <div className="top">
+            <h2 className="text-lg font-semibold">{title}</h2>
+            <p className="font-medium">{type}</p>
+            <p className="hidden text-yellow-400 font-medium md:flex">{shortDesc}...</p>
+          </div>
+
+          <div className="bottom">
+            <div className="price">
+              <p className="font-bold">$ {price}</p>
             </div>
-
-            <div className="desc">
-              <p>{type}</p>
-            </div>
-
             <div className="size">
               <div className="size-wrapper flex">
                 {sizes.map((size, i) => (
                   <p
                     className={
                       activeSize === i
-                        ? "font-lg bg-stone-600 w-9 flex justify-center items-center mx-1 text-white cursor-pointer"
-                        : "font-lg bg-white w-9 flex justify-center mx-1 cursor-pointer"
+                        ? "font-lg bg-stone-600 w-9 flex justify-center items-center text-white cursor-pointer"
+                        : "font-lg bg-white w-9 flex justify-center cursor-pointer"
                     }
                     key={i}
                     onClick={(event) => handleSizeClick(event, i)}>
@@ -62,13 +67,13 @@ const ProductBox = ({ title, desc, price, sizes, imageUrl, type, id }) => {
           </div>
         </div>
 
-        <div className="right w-1/4 py-4 px-3 flex flex-col justify-between items-end">
-          <div className="price">
-            <p className="font-bold">$ {price}</p>
-          </div>
-
-          <div className="add flex">
-            <Link to={`/shop/product/${id}`} className="mr-2 font-semibold text-white flex justify-center items-center h-8 w-24 bg-yellow-400 hover:bg-yellow-500">view more</Link>
+        <div className="right flex items-end justify-end">
+          <div className="flex">
+            <Link
+              to={`/shop/product/${id}`}
+              className="mr-2 font-semibold text-white flex justify-center items-center h-8 w-24 bg-yellow-400 hover:bg-yellow-500">
+              view more
+            </Link>
             <p
               className=" w-8 h-8 bg-yellow-400 text-white flex justify-center items-center font-bold cursor-pointer hover:bg-yellow-500"
               onClick={() => addToBag()}>

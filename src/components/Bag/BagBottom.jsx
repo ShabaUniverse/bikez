@@ -23,7 +23,7 @@ const BagBottom = () => {
   }, []);
 
   return (
-    <div className="payment w-full flex flex-col items-end mt-3">
+    <div className="payment w-full flex flex-col items-end mt-3 md:w-3/4 mx-auto">
       <div className="total-price-section">
         <p className=" text-xl font-semibold text-red-500">$ {totalPrice}</p>
       </div>

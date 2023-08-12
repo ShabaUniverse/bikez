@@ -24,12 +24,12 @@ const Header = () => {
   return (
     <div className="header bg-stone-600">
       <div className="header-container max-w-6xl mx-auto">
-        <div className="header-wrapper flex justify-between items-center w-full px-2 lg:p-0">
+        <div className="header-wrapper flex justify-between items-center w-full p-3 lg:p-0">
           {/* Nav Mobile */}
           <div
             className={
               navDisplay
-                ? "navbar w-1/2 p-2 h-screen fixed left-0 top-0 bg-stone-600 z-50 duration-500"
+                ? "navbar w-1/2 p-3 h-screen fixed left-0 top-0 bg-stone-600 z-50 duration-500"
                 : "fixed left-[-100%]"
             }>
             <Link to="/" className="flex">
@@ -150,13 +150,13 @@ const Header = () => {
           <div className="right-mobile lg:hidden">
             {navDisplay ? (
               <svg
-                className="fill-yellow-400"
+                className="fill-yellow-400 mr-4"
                 onClick={handleNav}
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
                 version="1.1"
-                width="25"
-                height="25"
+                width="22"
+                height="22"
                 viewBox="0 0 122.878 122.88"
                 enable-background="new 0 0 122.878 122.88"
                 xml:space="preserve">
@@ -196,13 +196,13 @@ const Header = () => {
 
           <div className="right w-3/4 bg-yellow-400 py-2 px-2 absolute right-0 rounded-tl-lg">
             <div className="links flex justify-start items-center">
-              <Link className="font-semibold underline mr-6 hover:text-white">
+              <Link className="font-semibold underline mr-3 hover:text-white">
                 Identify your riding style
               </Link>
-              <Link className="font-semibold underline mr-6 hover:text-white">
+              <Link className="font-semibold underline mr-3 hover:text-white">
                 Choose the right size
               </Link>
-              <Link className="font-semibold underline mr-6 hover:text-white">
+              <Link className="font-semibold underline mr-3 hover:text-white">
                 Consider frame materials
               </Link>
               <Link className="font-semibold underline hover:text-white">
