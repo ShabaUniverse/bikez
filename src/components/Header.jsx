@@ -41,6 +41,22 @@ const Header = () => {
               </span>
             </Link>
 
+            <div className="cart flex pt-7">
+              <Link to="/bag">
+                <svg
+                  className="fill-yellow-400 cursor-pointer hover:fill-yellow-500"
+                  viewBox="0 0 448 512"
+                  width="25px"
+                  height="25px"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M416 160h-72V120C344 53.83 290.2 0 224 0S104 53.83 104 120V160H32C14.33 160 0 174.3 0 192v240C0 476.2 35.82 512 80 512h288c44.18 0 80-35.82 80-80V192C448 174.3 433.7 160 416 160zM152 120C152 80.3 184.3 48 224 48s72 32.3 72 72V160h-144V120zM128 248C114.8 248 104 237.3 104 224S114.8 200 128 200S152 210.8 152 224S141.3 248 128 248zM320 248c-13.25 0-24-10.75-24-24S306.8 200 320 200S344 210.8 344 224S333.3 248 320 248z" />
+                </svg>
+              </Link>
+              <p className="font-semibold text-xs text-white">
+                {totalItemsInBag}
+              </p>
+            </div>
+
             <div className="flex flex-col">
               <Link
                 to="/"
@@ -76,6 +92,7 @@ const Header = () => {
           </div>
           {/* End of nav Mobile */}
 
+          {/* Large Screen Structure Logo */}
           <div className="left">
             <div className="logo">
               <Link to="/" className="flex">
@@ -88,6 +105,7 @@ const Header = () => {
               </Link>
             </div>
           </div>
+          {/* END Large Screen Structure Logo */}
 
           {/* Large Nav Links */}
           <div className="right hidden lg:flex">
@@ -147,17 +165,22 @@ const Header = () => {
                 </g>
               </svg>
             ) : (
-              <svg
-                className=" fill-yellow-400"
-                onClick={handleNav}
-                version="1.1"
-                viewBox="0 0 32 32"
-                width="30px"
-                xmlSpace="preserve"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink">
-                <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
-              </svg>
+              <div className="check flex">
+                <svg
+                  className=" fill-yellow-400"
+                  onClick={handleNav}
+                  version="1.1"
+                  viewBox="0 0 32 32"
+                  width="30px"
+                  xmlSpace="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink">
+                  <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+                </svg>
+                <p className="font-semibold text-xs text-white">
+                  {totalItemsInBag}
+                </p>
+              </div>
             )}
           </div>
           {/* end of ham menu */}

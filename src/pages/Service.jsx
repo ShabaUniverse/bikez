@@ -4,27 +4,24 @@ import Footer from '../components/Footer'
 
 const Service = () => {
   return (
-    <div className="service pt-20 w-full">
+    <div className="service">
       {/* service page title */}
-      <div className="serviceTop h-80 w-full bg-[url(/images/serviceBg.jpg)] bg-center bg-cover flex flex-col justify-center items-center">
-        <h2 className="desc-font text-3xl text-white font-semibold">
-          Pedal Perfect
-        </h2>
-        <h3 className="desc-font text-xl text-white font-medium">
-          Expert Bicycle Service and Repairs
-        </h3>
+      <div className="bg-[url(/images/serviceBg.jpg)] bg-center bg-cover h-[70vh] flex flex-col justify-center items-center">
+        <h2 className="desc-font text-3xl text-white font-semibold">Pedal Perfect</h2>
+        <h3 className="desc-font text-xl text-white font-medium">Expert Bicycle Service and Repairs</h3>
       </div>
 
-      {/* services section */}
 
-      <div className="service-container w-4/5 mx-auto">
-        <div className="service-section py-12 flex flex-col justify-center items-center">
+      {/* services section */}
+      <div className="service-container max-w-6xl">
+        <div className="service-section flex flex-col justify-center items-center pt-7">
           <div className="section-desc">
             <h2 className="desc-font text-3xl font-semibold">Our Services</h2>
           </div>
 
-          <div className="service-list flex pt-12 justify-between items-center">
-            <div className="first flex flex-col justify-center items-center mx-2">
+          <div className="service-list flex flex-col lg:flex-row justify-center items-center lg:items-start text-center">
+            
+            <div className="first flex flex-col justify-center items-center pt-7">
               <div className="image">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +40,7 @@ const Service = () => {
                   />
                 </svg>
               </div>
-              <div className="service-desc text-center pt-8">
+              <div className="service-desc">
                 <h3 className=" font-semibold text-xl">Bike Scan</h3>
                 <h4 className=" font-medium text-lg">
                   Effortless Bicycle Scanning and Precision Settings
@@ -51,7 +48,7 @@ const Service = () => {
               </div>
             </div>
 
-            <div className="second flex flex-col justify-center items-center mx-2">
+            <div className="second flex flex-col justify-center items-center pt-7">
               <div className="image">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +64,7 @@ const Service = () => {
                   </g>
                 </svg>
               </div>
-              <div className="service-desc text-center pt-8">
+              <div className="service-desc">
                 <h3 className=" font-semibold text-xl">Tire Fitting</h3>
                 <h4 className=" font-medium text-lg">
                   {" "}
@@ -76,7 +73,7 @@ const Service = () => {
               </div>
             </div>
 
-            <div className="third flex flex-col justify-center items-center mx-2">
+            <div className="third flex flex-col justify-center items-center pt-7">
               <div className="image">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +93,7 @@ const Service = () => {
                   />
                 </svg>
               </div>
-              <div className="service-desc text-center pt-8">
+              <div className="service-desc">
                 <h3 className=" font-semibold text-xl">Tune-Ups</h3>
                 <h4 className=" font-medium text-lg">
                   Adjustments, Lubrication, and Safety Checks.
@@ -104,7 +101,7 @@ const Service = () => {
               </div>
             </div>
 
-            <div className="fourth flex flex-col justify-center items-center mx-2">
+            <div className="fourth flex flex-col justify-center items-center py-7">
               <div className="image">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +117,7 @@ const Service = () => {
                   </g>
                 </svg>
               </div>
-              <div className="service-desc text-center pt-8">
+              <div className="service-desc">
                 <h3 className=" font-semibold text-xl">Fitness Assessments</h3>
                 <h4 className=" font-medium text-lg">
                   Advice for Customers Looking to Improve Their performance.
