@@ -2,7 +2,7 @@ import React from "react";
 
 const RidingStyle = () => {
   return (
-    <div className="ridingStyle w-3/5 py-10">
+    <div className="ridingStyle w-[90%] lg:w-3/5 py-10">
       <p className="text-center text-lg font-medium">
         <span className="text-yellow-400">Urban Commuter:</span> Effortlessly
         navigate the city with our sleek and practical commuter bikes like the
