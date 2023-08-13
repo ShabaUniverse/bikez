@@ -4,7 +4,7 @@ import "../../styles/App.css";
 const Community = () => {
   return (
     <div className="community h-screen overflow-hidden relative">
-      <div className="community-wrapper moving-image bg-[url(images/community.jpg)] bg-cover bg-center h-full w-full">
+      <div className="community-wrapper moving-image bg-[url(/images/community.jpg)] bg-cover bg-center h-full w-full">
         {/* kinda back image */}
       </div>
       <div className="community-text w-3/4 absolute top-[35%] left-[5%] md:left-[20%] md:w-2/4 lg:left-[15%] lg:w-[40%]">

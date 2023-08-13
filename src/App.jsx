@@ -7,6 +7,7 @@ import "./styles/App.css";
 import { Routes, Route } from "react-router-dom";
 import "animate.css";
 import Service from "./pages/Service";
+import Faq from "./pages/Faq";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/bag" element={<Bag />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/faq" element={<Faq />} />
         <Route path={`/shop/product/:id`} element={<DetailedProduct />} />
       </Routes>
     </div>

@@ -26,7 +26,7 @@ const ProductBox = ({ title, desc, price, sizes, imageUrl, type, id }) => {
     setActiveSize(index);
   };
 
-  let shortDesc = desc.split(' ').splice(0, 15).join(' ');
+  let shortDesc = desc.split(" ").splice(0, 15).join(" ");
 
   return (
     <div className="animate__animated animate__fadeInRight border my-2 border-white hover:border-yellow-400">
@@ -41,7 +41,9 @@ const ProductBox = ({ title, desc, price, sizes, imageUrl, type, id }) => {
           <div className="top">
             <h2 className="text-lg font-semibold">{title}</h2>
             <p className="font-medium">{type}</p>
-            <p className="hidden text-yellow-400 font-medium md:flex">{shortDesc}...</p>
+            <p className="hidden text-yellow-400 font-medium md:flex">
+              {shortDesc}...
+            </p>
           </div>
 
           <div className="bottom">
@@ -68,17 +70,17 @@ const ProductBox = ({ title, desc, price, sizes, imageUrl, type, id }) => {
         </div>
 
         <div className="right flex items-end justify-end">
-          <div className="flex">
-            <Link
-              to={`/shop/product/${id}`}
-              className="mr-2 font-semibold text-white flex justify-center items-center h-8 w-24 bg-yellow-400 hover:bg-yellow-500">
-              view more
-            </Link>
+          <div className="flex flex-col justify-between h-full items-end">
             <p
               className=" w-8 h-8 bg-yellow-400 text-white flex justify-center items-center font-bold cursor-pointer hover:bg-yellow-500"
               onClick={() => addToBag()}>
               +
             </p>
+            <Link
+              to={`/shop/product/${id}`}
+              className="font-semibold text-white flex justify-center items-center h-8 w-24 bg-yellow-400 hover:bg-yellow-500">
+              view more
+            </Link>
           </div>
         </div>
       </div>

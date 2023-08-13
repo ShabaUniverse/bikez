@@ -41,11 +41,11 @@ const Shop = () => {
         <div className="shop-sides lg:grid lg:grid-cols-4">
 
           <div className="leftSide">
-            <Categories />
+            {status === "succeeded" && <Categories />}
           </div>
 
           <div className="rightSide lg:col-span-3">
-            <Sort />
+            {status === "succeeded" && <Sort />}
             {status === "loading" && <Loading />}
             {status === "succeeded" && (
               <Products filteredProducts={filteredProducts} />
@@ -58,7 +58,8 @@ const Shop = () => {
           <Pagination filteredProducts={filteredProducts} />
         )}
       </div>
-      <Footer />
+      {status === "succeeded" && <Footer />}
+      
     </div>
   );
 };

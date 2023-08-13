@@ -45,6 +45,7 @@ const Header = () => {
               <Link to="/bag">
                 <svg
                   className="fill-yellow-400 cursor-pointer hover:fill-yellow-500"
+                  onClick={() => setNavDisplay(false)}
                   viewBox="0 0 448 512"
                   width="25px"
                   height="25px"
@@ -60,32 +61,35 @@ const Header = () => {
             <div className="flex flex-col">
               <Link
                 to="/"
-                className="mt-5 text-white font-semibold hover:text-yellow-400">
+                className="mt-5 text-white font-semibold hover:text-yellow-400"
+                onClick={() => setNavDisplay(false)}>
                 Home
               </Link>
               <Link
                 to="/shop"
-                className="mt-5 text-white font-semibold hover:text-yellow-400">
+                className="mt-5 text-white font-semibold hover:text-yellow-400"
+                onClick={() => setNavDisplay(false)}>
                 Shop
               </Link>
               <Link
                 to="/service"
-                className="mt-5 text-white font-semibold hover:text-yellow-400">
+                className="mt-5 text-white font-semibold hover:text-yellow-400"
+                onClick={() => setNavDisplay(false)}>
                 Service
               </Link>
             </div>
 
             <div className="suggestions mt-5 flex flex-col">
-              <Link className="text-yellow-400 font-medium mt-3 hover:text-white">
+              <Link to="/faq" onClick={() => setNavDisplay(false)} className="text-yellow-400 font-medium mt-3 hover:text-white">
                 Identify your riding style
               </Link>
-              <Link className="text-yellow-400 font-medium mt-3 hover:text-white">
+              <Link to="/faq" onClick={() => setNavDisplay(false)} className="text-yellow-400 font-medium mt-3 hover:text-white">
                 Choose the right size
               </Link>
-              <Link className="text-yellow-400 font-medium mt-3 hover:text-white">
+              <Link to="/faq" onClick={() => setNavDisplay(false)} className="text-yellow-400 font-medium mt-3 hover:text-white">
                 Consider frame materials
               </Link>
-              <Link className="text-yellow-400 font-medium mt-3 hover:text-white">
+              <Link to="/faq" onClick={() => setNavDisplay(false)} className="text-yellow-400 font-medium mt-3 hover:text-white">
                 Check Components
               </Link>
             </div>
@@ -158,8 +162,8 @@ const Header = () => {
                 width="22"
                 height="22"
                 viewBox="0 0 122.878 122.88"
-                enable-background="new 0 0 122.878 122.88"
-                xml:space="preserve">
+                enableBackground="new 0 0 122.878 122.88"
+                xmlSpace="preserve">
                 <g>
                   <path d="M1.426,8.313c-1.901-1.901-1.901-4.984,0-6.886c1.901-1.902,4.984-1.902,6.886,0l53.127,53.127l53.127-53.127 c1.901-1.902,4.984-1.902,6.887,0c1.901,1.901,1.901,4.985,0,6.886L68.324,61.439l53.128,53.128c1.901,1.901,1.901,4.984,0,6.886 c-1.902,1.902-4.985,1.902-6.887,0L61.438,68.326L8.312,121.453c-1.901,1.902-4.984,1.902-6.886,0 c-1.901-1.901-1.901-4.984,0-6.886l53.127-53.128L1.426,8.313L1.426,8.313z" />
                 </g>
