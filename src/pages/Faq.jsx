@@ -30,10 +30,16 @@ const Faq = () => {
             </div>
           </div>
 
-          <div className="frame-materials">
+          <div className="frame-materials flex flex-col justify-center items-center">
             <h3 className="logo-font text-center font-bold text-3xl text-yellow-400">
               Consider Frame Materials
             </h3>
+
+            <p className="text-center w-[90%] lg:w-3/5 py-10 font-semibold">
+              Rated on a 1-5 scale by the sage himself. With 1 being "best
+              option for". Of course, there are many variables to consider when
+              determining attributes of various frame materials
+            </p>
 
             <div className="faq">
               <Materials />
