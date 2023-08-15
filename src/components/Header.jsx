@@ -80,16 +80,28 @@ const Header = () => {
             </div>
 
             <div className="suggestions mt-5 flex flex-col">
-              <Link to="/faq" onClick={() => setNavDisplay(false)} className="text-yellow-400 font-medium mt-3 hover:text-white">
+              <Link
+                to="/faq"
+                onClick={() => setNavDisplay(false)}
+                className="text-yellow-400 font-medium mt-3 hover:text-white">
                 Identify your riding style
               </Link>
-              <Link to="/faq" onClick={() => setNavDisplay(false)} className="text-yellow-400 font-medium mt-3 hover:text-white">
+              <Link
+                to="/faq"
+                onClick={() => setNavDisplay(false)}
+                className="text-yellow-400 font-medium mt-3 hover:text-white">
                 Choose the right size
               </Link>
-              <Link to="/faq" onClick={() => setNavDisplay(false)} className="text-yellow-400 font-medium mt-3 hover:text-white">
+              <Link
+                to="/faq"
+                onClick={() => setNavDisplay(false)}
+                className="text-yellow-400 font-medium mt-3 hover:text-white">
                 Consider frame materials
               </Link>
-              <Link to="/faq" onClick={() => setNavDisplay(false)} className="text-yellow-400 font-medium mt-3 hover:text-white">
+              <Link
+                to="/faq"
+                onClick={() => setNavDisplay(false)}
+                className="text-yellow-400 font-medium mt-3 hover:text-white">
                 Check Components
               </Link>
             </div>
@@ -200,16 +212,24 @@ const Header = () => {
 
           <div className="right w-3/4 bg-yellow-400 py-2 px-2 absolute right-0 rounded-tl-lg">
             <div className="links flex justify-start items-center">
-              <Link className="font-semibold underline mr-3 hover:text-white">
+              <Link
+                to="/faq"
+                className="font-semibold underline mr-3 hover:text-white">
                 Identify your riding style
               </Link>
-              <Link className="font-semibold underline mr-3 hover:text-white">
+              <Link
+                to="/faq"
+                className="font-semibold underline mr-3 hover:text-white">
                 Choose the right size
               </Link>
-              <Link className="font-semibold underline mr-3 hover:text-white">
+              <Link
+                to="/faq"
+                className="font-semibold underline mr-3 hover:text-white">
                 Consider frame materials
               </Link>
-              <Link className="font-semibold underline hover:text-white">
+              <Link
+                to="/faq"
+                className="font-semibold underline hover:text-white">
                 Check Components
               </Link>
             </div>
