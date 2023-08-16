@@ -28,5 +28,5 @@ Install Dependencies: Navigate to the project directory and install the necessar
 
 cd bikes
 npm install
-Run the Development Server: Launch the development server to see in action:
-npm run dev
+
+Run the Development Server: Launch the development server to see in action: npm run dev
