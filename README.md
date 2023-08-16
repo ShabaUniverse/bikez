@@ -22,11 +22,12 @@ Getting Started
 Follow these simple steps to get started:
 
 Clone the Repository: Begin by cloning this GitHub repository to your local machine using the following command:
-git clone https://github.com/your-username/bicycles-ride.git
+git clone https://github.com/ShabaUniverse/bikez-store.git
 
 Install Dependencies: Navigate to the project directory and install the necessary dependencies using your preferred package manager. For example, with npm:
 
 cd bikes
 npm install
 
-Run the Development Server: Launch the development server to see in action: npm run dev
+Run the Development Server: Launch the development server to see in action: 
+npm run dev
