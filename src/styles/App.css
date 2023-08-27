@@ -11,13 +11,20 @@ body {
 }
 
 /* backgrounds  */
+
 .black-lined-bg {
   background: linear-gradient(90deg, transparent 50%, #393838 50%);
   background-size: 3em 3em;
   background-color: #262323;
   opacity: 1;
 }
+
 /* fonts */
+
+/* grid */
+.customGrid {
+  grid-column: span 1 / span 0.5;
+}
 
 /* sticky */
 
@@ -68,7 +75,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 
 /* for table */
 
@@ -121,10 +127,8 @@ th {
   }
 }
 
-
 /* service dividers */
 
 .polyg {
   clip-path: polygon(100% 0, 0 100%, 100%, 100%);
 }
-
