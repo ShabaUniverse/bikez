@@ -116,7 +116,7 @@ const Header = () => {
                   BIKE
                 </p>
                 <span className="logo-font text-4xl font-medium text-white">
-                  Z
+                  ZZ
                 </span>
               </Link>
             </div>

@@ -10,7 +10,7 @@ const Community = () => {
       <div className="community-text w-3/4 absolute top-[35%] left-[5%] md:left-[20%] md:w-2/4 lg:left-[15%] lg:w-[40%]">
         <div className="community-texts">
           <h2 className=" text-yellow-400 text-2xl shadowing">
-            Join the Bikez Community: Ride Together, Explore Together
+            Join the Bikezz Community: Ride Together, Explore Together
           </h2>
 
           <h3 className="community-desc text-white text-lg shadowing">
