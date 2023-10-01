@@ -1,7 +1,7 @@
 # Bikez Store
 
 E-commerce website.
-#### [Live Demo](https://bikez-mag.netlify.app/)
+#### [Live Demo](https://bikezz.netlify.app/)
 
 ## Tools
 
