@@ -19,7 +19,7 @@ const Community = () => {
             Community, where the love for two wheels brings us all together.
           </h3>
 
-          <button className="mt-4 px-8 py-1 border border-yellow-400 text-white rounded-lg cursor-pointer hover:bg-yellow-400">
+          <button className="mt-4 px-8 py-1 bg-yellow-400 text-white rounded-lg cursor-pointer font-semibold">
             Join
           </button>
         </div>

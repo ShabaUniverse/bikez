@@ -10,16 +10,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* backgrounds  */
-
-.black-lined-bg {
-  background: linear-gradient(90deg, transparent 50%, #393838 50%);
-  background-size: 3em 3em;
-  background-color: #262323;
-  opacity: 1;
-}
-
-/* fonts */
 
 /* grid */
 .customGrid {
