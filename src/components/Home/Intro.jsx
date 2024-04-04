@@ -3,11 +3,9 @@ import { Link } from "react-router-dom";
 import "../../styles/App.css";
 import "animate.css";
 
-// md:flex flex-col md:justify-center md:items-center"
-
 const Intro = () => {
   return (
-    <div className="intro h-[80vh] relative bg-stone-200">
+    <div className="intro h-[80vh] relative intro-chains">
       <div className="container max-w-5xl mx-auto flex justify-center md:justify-start h-full ">
         <div className="flex flex-col justify-center items-center ">
           <h2 className="text-white logo-font text-3xl shadowing z-20">

@@ -2,7 +2,7 @@ import React from "react";
 import Geometry from "../components/Detailed/Geometry";
 import Materials from "../components/Faq/Materials";
 
-import Diagram from "../../public/images/DiagramBike.png";
+import Diagram from "/images/DiagramBike.png";
 import RidingStyle from "../components/Faq/RidingStyle";
 
 import "../styles/App.css";

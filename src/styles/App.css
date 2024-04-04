@@ -91,7 +91,7 @@ th {
   background-color: rgba(250, 204, 21, 0.7);
 }
 
-/* mfucking animations */
+/* animations */
 
 .moving-image {
   animation: moveImage 7s linear infinite;
@@ -121,4 +121,13 @@ th {
 
 .polyg {
   clip-path: polygon(100% 0, 0 100%, 100%, 100%);
+}
+
+/* Intro BG */
+
+.intro-chains {
+  background-image: url("/images/pedalChains.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
 }
